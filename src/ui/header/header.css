@@ -1,0 +1,167 @@
+
+.amber-header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.25);
+
+}
+
+.amber-logo {
+    width: 120px;
+    height: 60px;
+    display: inline-block;
+}
+
+
+.body {
+    padding-left: 24px;
+    padding-bottom: 120px;
+    color: #787878;
+}
+
+.wrap-contained, .wrap-outline, .wrap-textbutton, .wrap-iconlbel-btn {
+    display: block;
+    margin-bottom: 56px;
+
+}
+
+.cnt-small, .cnt-mid, .cnt-large {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.margin-s-default, .margin-s-loading, .margin-s-disabled  {
+
+  display: inline-block;
+  margin-right: 16px;
+
+}
+
+.margin-m-default, .margin-m-loading, .margin-m-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+.margin-l-default, .margin-l-loading, .margin-l-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+/*OUTLINE BUTTON */
+
+.outline-small, .outline-mid, .outline-large {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.margin-outs-default, .margin-outs-loading, .margin-outs-disabled  {
+
+  display: inline-block;
+  margin-right: 16px;
+
+}
+
+.margin-outm-default, .margin-outm-loading, .margin-outm-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+.margin-outl-default, .margin-outl-loading, .margin-outl-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+/*TEXT BUTTON */
+
+.textbutton-small, .textbutton-mid, .textbutton-large {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.margin-textbtns-default, .margin-textbtns-loading, .margin-textbtns-disabled  {
+
+  display: inline-block;
+  margin-right: 16px;
+
+}
+
+.margin-textbtnm-default, .margin-textbtnm-loading, .margin-textbtnm-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+.margin-textbtnl-default, .margin-textbtnl-loading, .margin-textbtnl-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+/* BUTTON WITH ICON AND LABEL*/
+
+.iconlabel-small, .iconlabel-mid, .iconlabel-large {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.margin-iconlabels-default, .margin-iconlabels-loading, .margin-iconlabels-disabled  {
+
+  display: inline-block;
+  margin-right: 16px;
+
+}
+
+.margin-iconlabelm-default, .margin-iconlabelm-loading, .margin-iconlabelm-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+.margin-iconlabell-default, .margin-iconlabell-loading, .margin-iconlabell-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+/* FAB* /* Button with Only Icon and toggle button */ 
+
+.wrap-fab, .wrap-onlyicon, .wrap-togglebutton {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.fab-default, .fab-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+.onlyicon-default, .onlyicon-disabled  {
+
+    display: inline-block;
+    margin-right: 16px;
+  
+}
+
+
+
+
+
+
+
+

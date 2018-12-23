@@ -1,0 +1,23 @@
+
+.buttonGroup {
+    max-width: 576px;
+    border-radius: 3px;
+    background: transparent;
+    box-shadow: none;
+    color:#B472D0;
+    border: 2px solid #B472D0;   
+}
+
+.buttonGroup .amber-button.text:hover {
+    border-radius: none;
+    background: transparent;
+}
+
+.buttonGroup .amber-button.text:active,
+.buttonGroup .amber-button.text:focus {
+    border-radius: 0;
+    background: #B472D0;
+    color: #fff;
+    border: 0; 
+}
+

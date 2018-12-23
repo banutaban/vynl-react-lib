@@ -1,0 +1,7 @@
+.ripple-container {
+    display: inline-block;
+    position: relative;
+    overflow: none;
+    width: auto;
+    height: auto;
+}

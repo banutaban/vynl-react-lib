@@ -1,0 +1,304 @@
+
+/* CONTAINED BUTTON */
+
+.amber-button {
+    min-width: 192px;
+    height: 48px;
+    border-radius: 3px;
+    background: #B472D0;
+    box-shadow: 0 1px 2px 0 rgba(27, 25, 25, 0.25);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.amber-button:hover {
+    background: #9A4BBC;
+    box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.40);
+}
+
+.amber-button:active, 
+.amber-button:focus {
+    background: #7D3A9A;
+}
+
+.amber-button.large {
+    height: 56px;
+    font-size: 24px;
+  
+}
+
+.amber-button.small {
+    height: 40px;
+    font-size: 16px; 
+}
+
+.amber-button:disabled {
+ 
+    background:#E3E9F1;
+    box-shadow: none;
+    color: #A1B4C0;
+    pointer-events: none;
+}
+
+.amber-button.loading {
+    pointer-events: none;
+}
+
+
+/* OUTLINE BUTTON */
+
+.amber-button.outline {
+    
+    background: transparent;
+    box-shadow: none;
+    color:#B472D0;
+    border: 2px solid #B472D0;   
+}
+
+.amber-button.outline:hover {
+    background: #F0E3F6;
+}
+
+.amber-button.outline:active, 
+.amber-button.outline:focus {
+    background: #E1C7EC;
+}
+
+.amber-button.outline:disabled {
+    color: #A1B4C0;
+    border: 2px solid #E3E9F1;
+}
+
+/* TEXT BUTTON */
+
+.amber-button.text {
+    
+    background: transparent;
+    box-shadow: none;
+    color:#B472D0;
+    border: 0;
+    outline: 0;
+}
+
+.amber-button.text:hover {
+    background: #F0E3F6;
+}
+
+.amber-button.text:active, 
+.amber-button.text:focus {
+    background: #E1C7EC
+}
+
+.amber-button.text:disabled {
+    color: #A1B4C0;
+    border: 0;
+}
+
+
+
+/* BUTTON WITH ICON & LABEL */
+
+.amber-button.withicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    color: #C6CFD5;
+}
+
+
+/* Medium */
+
+.amber-button.withicon .iconwrapperm {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    
+}
+.amber-button.withicon .iconwrapperm  > * {
+    width: 100%;
+    height: 100%;
+}
+
+.amber-button.withicon .labelwrapperm {
+   display: inline; 
+      
+}
+
+/* Small */
+
+.amber-button.withicon .iconwrappers {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.amber-button.withicon .iconwrappers  > * {
+    width: 100%;
+    height: 100%;
+}
+
+.amber-button.withicon .labelwrappers {
+   display: inline;    
+}
+
+/* Large */
+
+.amber-button.withicon .iconwrapperl {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.amber-button.withicon .iconwrapperl  > * {
+    width: 100%;
+    height: 100%;
+}
+
+.amber-button.withicon .labelwrapperl {
+   display: inline;    
+}
+
+/* FAB */
+
+.amber-button.fab {
+    min-width: 56px;
+    max-width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amber-button.fab .iconwrapperl {
+    width: 100%;
+    height: 100%;
+}
+
+/* BUTTON WITH ONLY ICON */
+
+.amber-button.onlyicon {
+ 
+    background: transparent;
+    box-shadow: none;
+    min-width: 56px;
+    max-width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C6CFD5;
+}
+
+.amber-button.onlyicon .iconwrapperl {
+    width: 100%;
+    height: 100%;
+}
+
+.amber-button.onlyicon:hover {
+ 
+    background: #F0E3F6;
+    color: #B472D0;
+}
+
+.amber-button.onlyicon:active,
+.amber-button.onlyicon:focus  {
+ 
+    background: #E1C7EC;
+}
+
+.amber-button.onlyicon:disabled {
+ 
+    color: #E3E9F1;
+}
+
+/* TOGGLE BUTTON */
+
+.amber-button.toggle-btn {
+    background: transparent;
+    box-shadow: none;
+}
+
+.amber-button.toggle-btn .btn-group{
+    background: transparent;
+    box-shadow: none;
+}
+
+/* SPINNER*/
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+/* RIPPLE CSS */
+
+
+.ripple-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.ripple-obj {
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  fill: rgba(255,255,255,.3);
+}
+
