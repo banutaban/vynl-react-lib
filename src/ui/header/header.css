@@ -142,12 +142,14 @@
 .wrap-fab, .wrap-onlyicon, .wrap-togglebutton {
     display: inline-block;
     margin-right: 80px;
+    margin-bottom: 24px;
 }
 
 .fab-default, .fab-disabled  {
 
     display: inline-block;
     margin-right: 16px;
+    margin-bottom: 24px;
   
 }
 
@@ -155,11 +157,19 @@
 
     display: inline-block;
     margin-right: 16px;
+    margin-bottom: 24px;
   
 }
 
+.wrap-formfield {
+    display: block;
+    margin-bottom: 56px;
+}
 
-
+.input-text, .input-password, .input-icon, .input-multilab {
+    display: inline-block;
+    margin-right: 16px;
+}
 
 
 

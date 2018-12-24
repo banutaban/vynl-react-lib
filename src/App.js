@@ -1,6 +1,12 @@
 
 import React, { Component } from 'react';
 
+import {AmberLabel} from "./components/AmberLabel/AmberLabel";
+
+import {AmberInput} from "./components/AmberInput/AmberInput";
+
+import {FormField} from "./components/FormField/FormField";
+
 import {AmberButton} from "./components/AmberButton/AmberButton";
 import './App.css';
 
@@ -662,7 +668,71 @@ class App extends Component {
         
         </div> 
 
-  </div>   
+       {/* FORM FIELD */}
+
+
+       <div className="wrap-formfield">
+
+        <h2>Input</h2>
+
+        <div className="input-multilab">
+        
+        <div>
+        <FormField>
+          <div>
+          <AmberLabel>
+        Label
+        </AmberLabel>
+          </div>
+          <div>
+        <AmberInput type="text" placeholder="input with icon" autofocus="" autocomplete="" name="email">
+        </AmberInput>
+        </div>
+        </FormField>
+        </div>
+        
+        </div>
+
+        <div className="input-icon">
+        
+        <div>
+        <FormField>
+        <AmberInput type="text" placeholder="input with icon" autofocus="" autocomplete="" name="email">
+        <FontAwesomeIcon icon="heart"/>
+        </AmberInput>
+        </FormField>
+        </div>
+        
+        </div>
+
+        <div className="input-text">
+
+        <div>
+        <FormField>
+        <AmberInput type="text" placeholder="email address" autofocus="" autocomplete="" name="email">
+        </AmberInput>
+        </FormField>
+        </div>
+
+        </div>
+
+        <div className="input-password">
+
+        <div>
+        <FormField>
+        <AmberInput type="password" placeholder="password" autofocus="" autocomplete="" name="password">
+        </AmberInput>
+        </FormField>
+        </div>
+
+        </div>
+
+        </div>
+
+
+    {/* BODY DIV CLOSE TAG */}
+
+    </div>    
 
        
     ];

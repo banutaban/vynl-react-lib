@@ -1,0 +1,39 @@
+
+.amber-input {
+    width: 100%;
+    min-width: 192px;
+    max-width: 300px;
+    height: 48px;
+    border-radius: 3px;
+    
+    border: 1px solid #c6cfd5;
+    background: #fff;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amber-input input {
+    flex-grow: 1;
+    height: 100%;
+    background: transparent;
+    color: #787878;
+    font-size: 16px;
+    font-weight: normal;
+    border: 0;
+    outline: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: #c6cfd5;
+}
+

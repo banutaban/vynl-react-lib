@@ -1,0 +1,14 @@
+.amber-label {
+    height: 18px;
+    border-radius: 3px;
+    color: #fff;
+    border: 0;
+    background: #B472D0;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px 8px 1px 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}

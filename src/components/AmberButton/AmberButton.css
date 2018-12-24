@@ -281,24 +281,7 @@
     animation: rotating 2s linear infinite;
   }
 
-/* RIPPLE CSS */
 
 
-.ripple-container {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-}
 
-.ripple-obj {
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-  fill: rgba(255,255,255,.3);
-}
 
