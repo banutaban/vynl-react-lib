@@ -5,7 +5,7 @@
     min-width: 192px;
     height: 48px;
     border-radius: 3px;
-    background: #B472D0;
+    background: var(--brand-100);
     box-shadow: 0 1px 2px 0 rgba(27, 25, 25, 0.25);
     color: #fff;
     font-size: 20px;
@@ -17,13 +17,13 @@
 }
 
 .amber-button:hover {
-    background: #9A4BBC;
+    background: var(--brand-110);
     box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.40);
 }
 
 .amber-button:active, 
 .amber-button:focus {
-    background: #7D3A9A;
+    background: var(--brand-120);
 }
 
 .amber-button.large {
@@ -41,7 +41,7 @@
  
     background:#E3E9F1;
     box-shadow: none;
-    color: #A1B4C0;
+    color: var(--text-02);
     pointer-events: none;
 }
 
@@ -56,8 +56,8 @@
     
     background: transparent;
     box-shadow: none;
-    color:#B472D0;
-    border: 2px solid #B472D0;   
+    color:var(--brand-100);
+    border: 2px solid var(--brand-100);   
 }
 
 .amber-button.outline:hover {
@@ -70,7 +70,7 @@
 }
 
 .amber-button.outline:disabled {
-    color: #A1B4C0;
+    color: var(--text-02);
     border: 2px solid #E3E9F1;
 }
 
@@ -80,7 +80,7 @@
     
     background: transparent;
     box-shadow: none;
-    color:#B472D0;
+    color:var(--brand-100);
     border: 0;
     outline: 0;
 }
@@ -95,7 +95,7 @@
 }
 
 .amber-button.text:disabled {
-    color: #A1B4C0;
+    color: var(--text-02);
     border: 0;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .heart {
-    color: #C6CFD5;
+    color: var(--ui-06);
 }
 
 
@@ -206,7 +206,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #C6CFD5;
+    color: var(--ui-06);
 }
 
 .amber-button.onlyicon .iconwrapperl {
@@ -217,7 +217,7 @@
 .amber-button.onlyicon:hover {
  
     background: #F0E3F6;
-    color: #B472D0;
+    color: var(--brand-100);
 }
 
 .amber-button.onlyicon:active,

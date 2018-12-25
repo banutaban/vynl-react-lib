@@ -6,7 +6,7 @@
     height: 48px;
     border-radius: 3px;
     
-    border: 1px solid #c6cfd5;
+    border: 1px solid var(--ui-06);
     background: #fff;
     outline: 0;
     display: flex;
@@ -18,7 +18,7 @@
     flex-grow: 1;
     height: 100%;
     background: transparent;
-    color: #787878;
+    color: var(--text-01);
     font-size: 16px;
     font-weight: normal;
     border: 0;
@@ -34,6 +34,6 @@
     justify-content: center;
     width: 48px;
     height: 48px;
-    color: #c6cfd5;
+    color: var(--ui-06);
 }
 
