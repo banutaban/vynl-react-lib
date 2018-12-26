@@ -6,6 +6,8 @@ import { FormField } from '../components/FormField/FormField';
 import { AmberLabel } from '../components/AmberLabel/AmberLabel';
 
 
+import './input.css';
+
 /* ICONS */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,72 +23,80 @@ library.add(faHeart);
 export const Input = () => {
     return (
 
-    <div className="wrap-formfield">
-    <h2>Input</h2>
-
-    <div className="input-multilab">
         <div>
-            <FormField>
-                <div>
-                    <AmberLabel>Label</AmberLabel>
+            <div className="page-intro">
+                <div className="headline-02">Input</div>
+
+                <div className="paragraph">Sed ut perspiciatis unde omnis iste natus error 
+                     sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                    et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            </div>
+        
+            <div className="page-section">
+        
+                <div className="headline-04-primary">Input Default</div>
+
+                    <FormField>
+                        <AmberInput
+                            type="text"
+                            placeholder="email address"
+                            autofocus=""
+                            autocomplete=""
+                            name="email"
+                        />
+                    </FormField>
+
+                    <FormField>
+                        <AmberInput
+                            type="password"
+                            placeholder="password"
+                            autofocus=""
+                            autocomplete=""
+                            name="password"
+                        />
+                    </FormField>
+                
                 </div>
-                <div>
-                    <AmberInput
-                        type="text"
-                        placeholder="input with icon"
-                        autofocus=""
-                        autocomplete=""
-                        name="email"
-                    />
+
+                <div className="page-section">
+        
+                <div className="headline-04-primary">Input with Multi Labels</div>
+
+                    <FormField>
+                        <div>
+                            <AmberLabel>Label</AmberLabel>
+                        </div>
+                        <div>
+                            <AmberInput
+                                type="text"
+                                placeholder="input with icon"
+                                autofocus=""
+                                autocomplete=""
+                                name="email"
+                            /> 
+                            </div>   
+                    </FormField>
+                
                 </div>
-            </FormField>
-        </div>
-    </div>
+                    
+                <div className="page-section">
+        
+                <div className="headline-04-primary">Input with Icon</div>
 
-    <div className="input-icon">
-        <div>
-            <FormField>
-                <AmberInput
-                    type="text"
-                    placeholder="input with icon"
-                    autofocus=""
-                    autocomplete=""
-                    name="email"
-                >
-                    <FontAwesomeIcon icon="heart" />
-                </AmberInput>
-            </FormField>
+                    <FormField>
+                        <AmberInput
+                            type="text"
+                            placeholder="input with icon"
+                            autofocus=""
+                            autocomplete=""
+                            name="email"
+                        >
+                            <FontAwesomeIcon icon="heart" />
+                        </AmberInput>
+                    </FormField>
+                </div>
         </div>
-    </div>
-
-    <div className="input-text">
-        <div>
-            <FormField>
-                <AmberInput
-                    type="text"
-                    placeholder="email address"
-                    autofocus=""
-                    autocomplete=""
-                    name="email"
-                />
-            </FormField>
-        </div>
-    </div>
-
-    <div className="input-password">
-        <div>
-            <FormField>
-                <AmberInput
-                    type="password"
-                    placeholder="password"
-                    autofocus=""
-                    autocomplete=""
-                    name="password"
-                />
-            </FormField>
-        </div>
-    </div>
-</div>
        
     )
 }

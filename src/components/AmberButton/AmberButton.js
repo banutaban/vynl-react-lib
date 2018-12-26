@@ -9,9 +9,6 @@ library.add(faSpinner)
 
 
 
-  //  NORMAL CODE //
-
-
 const renderLoading=() => {
     return (
     <div className="loading-spinner">

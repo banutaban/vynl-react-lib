@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Button } from './pages/button';
 import { Input } from './pages/input';
+import { Toggle } from './pages/toggle';
+import { Notification } from './pages/notification';
+import { Misc } from './pages/misc';
 import { Menu } from './ui/menu/menu';
 
 import './App.css';
@@ -41,7 +44,7 @@ class App extends Component {
 						</div>
 						<div className="content-col">
 							<Switch>
-								<Route path="/" exact component={Home} />
+								<Route path="/" exact redirect="/button" />
 								<Route path="/button" component={Button} />
 								<Route path="/input" component={Input} />
 							</Switch>

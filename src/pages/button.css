@@ -1,0 +1,10 @@
+.amber-button {
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.buttonGroup .amber-button {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
