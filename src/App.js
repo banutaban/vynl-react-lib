@@ -8,6 +8,7 @@ import { Notification } from './pages/notification';
 import { Misc } from './pages/misc';
 import { Menu } from './ui/menu/menu';
 
+
 import './App.css';
 
 
@@ -47,6 +48,7 @@ class App extends Component {
 								<Route path="/" exact redirect="/button" />
 								<Route path="/button" component={Button} />
 								<Route path="/input" component={Input} />
+								<Route path="/toggle" component={Toggle} />
 							</Switch>
 						</div>
 					</div>

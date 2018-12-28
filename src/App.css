@@ -14,9 +14,8 @@
   --ui-05: #323B4C;
   --ui-06: #C6CFD5;
   --text-01: #4a4a4a;
-  --text-02: #787878;
-  --text-03: #A1B4C0;
-  --text-04: var(--brand-200);
+  --text-02: rgb(148, 165, 175);
+  --text-03: var(--brand-200);
   --text-inverse: var(--ui-04);
   --support-01: #185BA9;
   --support-02: #7ED321;
@@ -154,7 +153,8 @@ body {
   width: 240px;
   box-sizing: border-box;
   background: var(--ui-04); 
-  padding-top: 100px;
+  box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.25);
+  padding-top: 84px;
   padding-left: 40px;
   position: fixed;
   top: 0;
@@ -163,7 +163,7 @@ body {
 
 .page-container .body-container .content-col {
   min-height: calc(100vh - 60px);
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 60px;
   padding-left: 40px;
   margin-left: 240px;
