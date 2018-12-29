@@ -35,7 +35,7 @@ export const Input = () => {
         
             <div className="page-section">
         
-                <div className="headline-04-primary-input">Input Default</div>
+                <div className="headline-input">Input Default</div>
 
                     <FormField>
                         <AmberInput
@@ -78,7 +78,7 @@ export const Input = () => {
                     
                 <div className="page-section">
         
-                <div className="headline-04-primary-input">Input with Icon</div>
+                <div className="headline-input">Input with Icon</div>
 
                     <FormField>
                         <AmberInput

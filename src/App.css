@@ -180,7 +180,11 @@ body {
   margin-bottom: 16px;
 }
 
-.headline-04-primary-input {
+.headline-input {
+  font-size: var(--font-size-s);
+  font-weight: bold;
+  line-height: 24px;
+  color: var(--text-01);
   margin-bottom: 40px;
 }
 
