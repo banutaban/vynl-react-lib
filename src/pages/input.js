@@ -35,14 +35,14 @@ export const Input = () => {
         
             <div className="page-section">
         
-                <div className="headline-04-primary">Input Default</div>
+                <div className="headline-04-primary-input">Input Default</div>
 
                     <FormField>
                         <AmberInput
                             type="text"
                             placeholder="email address"
-                            autofocus=""
-                            autocomplete=""
+                            autoFocus=""
+                            autoComplete=""
                             name="email"
                         />
                     </FormField>
@@ -51,8 +51,8 @@ export const Input = () => {
                         <AmberInput
                             type="password"
                             placeholder="password"
-                            autofocus=""
-                            autocomplete=""
+                            autoFocus=""
+                            autoComplete=""
                             name="password"
                         />
                     </FormField>
@@ -64,32 +64,28 @@ export const Input = () => {
                 <div className="headline-04-primary">Input with Multi Labels</div>
 
                     <FormField>
-                        <div>
+                 
                             <AmberLabel>Label</AmberLabel>
-                        </div>
-                        <div>
                             <AmberInput
                                 type="text"
                                 placeholder="input with icon"
-                                autofocus=""
-                                autocomplete=""
+                                autoFocus=""
+                                autoComplete=""
                                 name="email"
-                            /> 
-                            </div>   
+                            />      
                     </FormField>
-                
                 </div>
                     
                 <div className="page-section">
         
-                <div className="headline-04-primary">Input with Icon</div>
+                <div className="headline-04-primary-input">Input with Icon</div>
 
                     <FormField>
                         <AmberInput
                             type="text"
                             placeholder="input with icon"
-                            autofocus=""
-                            autocomplete=""
+                            autoFocus=""
+                            autoComplete=""
                             name="email"
                         >
                             <FontAwesomeIcon icon="heart" />

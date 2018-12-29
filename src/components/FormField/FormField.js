@@ -1,10 +1,10 @@
 
 import React from "react";
-
+import "./FormField.css";
 
 export const FormField = ({children}) => {
     return (
-           <div>
+           <div className="form-field">
         {children}
            </div>
     

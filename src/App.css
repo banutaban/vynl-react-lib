@@ -7,7 +7,7 @@
   --brand-200: #4B88FA;
   --brand-210: #1967F9;
   --brand-220: #064FD9;
-  --ui-01: #F1F4F8;
+  --ui-01: #F8F9FB;
   --ui-02: #F9FBFD;
   --ui-03: #E7ECEF;
   --ui-04: #FFFFFF;
@@ -178,6 +178,10 @@ body {
 
 .page-section .headline-04-primary {
   margin-bottom: 16px;
+}
+
+.headline-04-primary-input {
+  margin-bottom: 40px;
 }
 
 .page-intro {
