@@ -1,63 +1,41 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/home';
+import { Menu } from './ui/menu/menu';
+import { AmberHeader } from './ui/header/header';
 import { Button } from './pages/button';
 import { Input } from './pages/input';
 import { Toggle } from './pages/toggle';
-import { Notification } from './pages/notification';
-import { Misc } from './pages/misc';
-import { Menu } from './ui/menu/menu';
-
-
+import amberLogo from './assets/images/amber_logo.png';
 import './App.css';
 
-
-import { AmberHeader } from './ui/header/header';
-
-import logo from './assets/images/amber_logo.png';
-
-/* ICONS */
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-
-/* Too add new icons from the Fontawesome solid free package, copy the name of the selected icon from the FA website and place the name 
-with a coma afte the faHeart on the 11th line. Don't forget to place each added icon under the 16th line, 
-as the same format at the 16th line. */
-
-library.add(faHeart);
-
 class App extends Component {
-	render() {
-		return (
-			<Router>
-				<div className="page-container">
-					<AmberHeader>
-						<div className="amber-logo">
-							<img src={logo} alt="logo"/>
-						</div>
-					</AmberHeader>
+  render() {
+    return (
+      <Router>
+        <div className='page-container'>
+          <AmberHeader>
+            <div className='amber-logo'>
+              <img src={amberLogo} alt='amber-logo' />
+            </div>
+          </AmberHeader>
 
-					<div className="body-container">
-						<div className="left-col">
-							<Menu/>
-						</div>
-						<div className="content-col">
-							<Switch>
-								<Route path="/" exact redirect="/button" />
-								<Route path="/button" component={Button} />
-								<Route path="/input" component={Input} />
-								<Route path="/toggle" component={Toggle} />
-							</Switch>
-						</div>
-					</div>
-				</div>
-			</Router>
-		);
-	}
+          <div className='body-container'>
+            <div className='left-col'>
+              <Menu />
+            </div>
+            <div className='content-col'>
+              <Switch>
+                <Route path='/' exact redirect='/button' />
+                <Route path='/button' component={Button} />
+                <Route path='/input' component={Input} />
+                <Route path='/toggle' component={Toggle} />
+              </Switch>
+            </div>
+          </div>
+        </div>
+      </Router>
+    );
+  }
 }
-
-
 
 export default App;

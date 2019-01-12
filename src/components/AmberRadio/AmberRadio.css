@@ -1,29 +1,24 @@
 .amber-radio {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--ui-06);
-    background: var(--ui-04);
-    outline: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 24px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--ui-06);
+  background: var(--ui-04);
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  cursor: pointer;
 }
 
 .amber-radio.active {
- 
-    border: 1px solid var(--brand-100);
- 
+  border: 1px solid var(--brand-100);
 }
 
 .inner-circle {
- 
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    background: var(--brand-100);
- 
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: var(--brand-100);
 }
-

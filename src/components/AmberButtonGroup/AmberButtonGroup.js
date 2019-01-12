@@ -1,10 +1,6 @@
-import "./AmberButtonGroup.css";
-import React from "react";
+import React from 'react';
+import './AmberButtonGroup.css';
 
-export const AmberButtonGroup = ({children, size="medium", disabled, kind}) => {
-    return (
-        <div className="buttonGroup">
-            {children}
-        </div>
-    )
-}
+export const AmberButtonGroup = ({ children }) => {
+  return <div className='buttonGroup'>{children}</div>;
+};

@@ -1,23 +1,21 @@
-
 .buttonGroup {
-    max-width: 576px;
-    border-radius: 3px;
-    background: transparent;
-    box-shadow: none;
-    color:var(--brand-100);
-    border: 2px solid var(--brand-100);   
+  max-width: 576px;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--brand-100);
+  border: 2px solid var(--brand-100);
 }
 
 .buttonGroup .amber-button.text:hover {
-    border-radius: none;
-    background: transparent;
+  border-radius: none;
+  background: transparent;
 }
 
 .buttonGroup .amber-button.text:active,
 .buttonGroup .amber-button.text:focus {
-    border-radius: 0;
-    background: var(--brand-100);
-    color: #fff;
-    border: 0; 
+  border-radius: 0;
+  background: var(--brand-100);
+  color: #fff;
+  border: 0;
 }
-

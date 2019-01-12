@@ -1,6 +1,5 @@
-
-import React from "react";
+import React from 'react';
 
 export const Notifications = () => {
-    return ("Notification")
-}
+  return 'Notification';
+};

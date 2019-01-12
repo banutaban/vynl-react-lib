@@ -1,14 +1,14 @@
 .amber-label {
-    height: 18px;
-    border-radius: 3px;
-    color: var(--text-inverse);
-    border: 0;
-    background: var(--brand-100);
-    font-weight: bold;
-    font-size: var(--font-size-xs);
-    padding: 1px 8px 1px 8px;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
+  height: 18px;
+  border-radius: 3px;
+  color: var(--text-inverse);
+  border: 0;
+  background: var(--brand-100);
+  font-weight: bold;
+  font-size: var(--font-size-xs);
+  padding: 1px 8px 1px 8px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
 }
