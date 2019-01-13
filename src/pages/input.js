@@ -2,6 +2,7 @@ import React from 'react';
 import { AmberInput } from '../components/AmberInput/AmberInput';
 import { FormField } from '../components/FormField/FormField';
 import { AmberLabel } from '../components/AmberLabel/AmberLabel';
+import { AmberButton } from '../components/AmberButton/AmberButton';
 import './input.css';
 
 /* ICONS */
@@ -18,7 +19,7 @@ library.add(faHeart);
 
 export const Input = () => {
   return (
-    <div>
+    <div className="inputpage">
       <div className='page-intro'>
         <div className='headline-02'>Input</div>
 
@@ -54,7 +55,11 @@ export const Input = () => {
 
         <FormField>
           <AmberInput type='text' placeholder='input with icon' autoFocus='' autoComplete='' name='email'>
+          <AmberButton size='small' kind='onlyicon'>
+          <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
+          </div>
+          </AmberButton>
           </AmberInput>
         </FormField>
       </div>

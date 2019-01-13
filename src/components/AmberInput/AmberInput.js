@@ -23,12 +23,14 @@ export class AmberInput extends Component {
     return !this.state.focus && this.state.value === '' ? 'placeholder' : '';
   }
 
-  renderLabel(placeholder) {
-    return (
-      <AmberLabel className={this.generateLabelClassName()}>
-        {placeholder}
-      </AmberLabel>
-    );
+  renderLabel(placeholder, externalLabel) {
+      if (!externalLabel) {
+         return (
+            <AmberLabel className={this.generateLabelClassName()}>
+                {placeholder}
+            </AmberLabel>
+            );
+        }
   }
 
   render() {
@@ -38,15 +40,17 @@ export class AmberInput extends Component {
       onFocus,
       onBlur,
       onChange,
+      externalLabel,
       ...props
     } = this.props;
     return (
-      <div className='amber-input-wrapper'>
+      <div className={this.state.focus ? 'amber-input-wrapper focus' : 'amber-input-wrapper'}>
         {placeholder && placeholder !== ''
-          ? this.renderLabel(placeholder)
+          ? this.renderLabel(placeholder, externalLabel)
           : undefined}
         <div className='amber-input'>
           <input
+           placeholder={externalLabel? placeholder : undefined}
             {...props}
             onChange={e => {
               onChange && onChange(e);

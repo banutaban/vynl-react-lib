@@ -17,7 +17,7 @@ library.add(faHeart);
 
 export const Button = () => {
   return (
-    <div>
+    <div className="buttonpage">
       <div className='page-intro'>
         <div className='headline-02'>Button</div>
 

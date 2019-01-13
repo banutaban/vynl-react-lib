@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.amber-input-wrapper.focus {
+  border: 1px solid var(--brand-100);
+}
+
+
 .amber-input-wrapper .amber-label {
   position: absolute;
   top: -26px;
@@ -51,15 +56,23 @@
   box-sizing: border-box;
 }
 
-.amber-input input:focus {
-  border: 1px solid var(--brand-100);
-}
 
-.icon-wrapper {
+.amber-input .icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
   color: var(--ui-06);
+}
+
+.amber-input .icon-wrapper .amber-button.onlyicon {
+  width: 48px;
+  height: 48px;
+}
+
+.amber-input .icon-wrapper .amber-button.onlyicon:hover,
+.amber-input .icon-wrapper .amber-button.onlyicon:active,
+.amber-input .icon-wrapper .amber-button.onlyicon:focus {
+  background: transparent;
 }
