@@ -1,8 +1,9 @@
-import './AmberButton.css';
 import React from 'react';
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Ripple } from '../Ripple/Ripple';
+import './AmberButton.css';
+
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 library.add(faSpinner);
 
@@ -22,8 +23,10 @@ export const AmberButton = ({
 }) => {
   const cssNameArray = ['amber-button', size, kind, loading ? 'loading' : ''];
   return (
-    <button className={cssNameArray.join(' ')} disabled={disabled}>
-      {loading ? renderLoading() : children}
-    </button>
+    <Ripple>
+      <button className={cssNameArray.join(' ')} disabled={disabled}>
+        {loading ? renderLoading() : children}
+      </button>
+    </Ripple>
   );
 };

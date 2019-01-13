@@ -1,0 +1,31 @@
+.ripple-target {
+    position: relative;
+}
+
+.ripple-target .ripple-effect-container {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+.ripple-effect-container .ripple-effect {
+    border-radius: 50%;
+    width: 10;
+    height: 10;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.ripple-effect-container .ripple-effect.animating {
+    transition: all ease-in-out 660ms;
+    visibility: visible;
+}
