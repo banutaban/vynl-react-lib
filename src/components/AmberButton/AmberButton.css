@@ -187,29 +187,27 @@
 .amber-button.onlyicon {
   background: transparent;
   box-shadow: none;
-  min-width: 56px;
-  max-width: 56px;
+  color: var(--ui-06);
+}
+
+.amber-button.onlyicon .iconwrapperl {
+  width: 56px;
   height: 56px;
   border-radius: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--ui-06);
 }
 
-.amber-button.onlyicon .iconwrapperl {
-  width: 100%;
-  height: 100%;
-}
-
-.amber-button.onlyicon:hover {
+.amber-button.onlyicon .iconwrapperl:hover {
   background: #f0e3f6;
   color: var(--brand-100);
 }
 
-.amber-button.onlyicon:active,
-.amber-button.onlyicon:focus {
+.amber-button.onlyicon .iconwrapperl:active,
+.amber-button.onlyicon .iconwrapperl:focus {
   background: #e1c7ec;
+  color: var(--brand-100);
 }
 
 .amber-button.onlyicon:disabled {

@@ -1,4 +1,5 @@
 .form-field {
-  height: 82px;
+  min-height: 82px;
+  height: auto;
   margin-bottom: 8px;
 }

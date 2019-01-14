@@ -2,3 +2,9 @@
   margin-right: 24px;
   margin-bottom: 24px;
 }
+
+.inputpage .amber-button .onlyicon:hover,
+.inputpage .amber-button .onlyicon:active,
+.inputpage .amber-button .onlyicon:focus {
+  background: transparent;
+}
