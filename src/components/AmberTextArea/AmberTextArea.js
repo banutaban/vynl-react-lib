@@ -5,7 +5,7 @@ import { AmberLabel } from '../AmberLabel/AmberLabel';
 export class AmberTextArea extends Component {
     constructor() {
       super();
-      this.state = { focus: false, value: '' };
+      this.state = { focus: false, value: ''};
     }
   
     handleFocus() {
@@ -14,7 +14,7 @@ export class AmberTextArea extends Component {
     handleBlur() {
       this.setState({ focus: false });
     }
-  
+
     handleOnChange(text) {
       this.setState({ value: text });
     }
@@ -26,12 +26,14 @@ export class AmberTextArea extends Component {
         onFocus,
         onBlur,
         onChange,
+        disabled,
         ...props
       } = this.props;
 
       return (
         <div className={this.state.focus ? 'amber-text-area focus' : 'amber-text-area'}>
           <textarea
+          disabled= {disabled}
           placeholder= {placeholder}
               onChange={e => {
                 onChange && onChange(e);
@@ -44,11 +46,16 @@ export class AmberTextArea extends Component {
               onBlur={e => {
                 onBlur && onBlur(e);
                 this.handleBlur();
-              }} >
+              }} 
+              {...props}
+              >
               {children}
+          
+
             </textarea>
            
           </div>
       );
     }
 }
+

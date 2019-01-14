@@ -65,6 +65,24 @@ export const Input = () => {
         </FormField>
       </div>
 
+      <div className='page-section'>
+        <div className='headline-input'>Input Disabled</div>
+
+        <FormField>
+        <AmberInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' disabled={true}/>
+        </FormField>
+      </div>
+
+
+      <div className='page-section'>
+        <div className='headline-input'>Input Loading</div>
+
+        <FormField>
+        <AmberInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' disabled={false} loading={true}/>
+        </FormField>
+      </div>
+
+
       <div className='page-intro'>
         <div className='headline-02'>Text Area</div>
 
@@ -87,9 +105,15 @@ export const Input = () => {
         <div className='headline-input'>Text Area with Icon</div>
 
         <FormField>
-          <AmberTextArea type='text' placeholder='Type something' autoFocus='' >
-          Hello Moto
-          </AmberTextArea>
+          <AmberTextArea type='text' placeholder='Type something' autoFocus='' />
+        </FormField>
+      </div>
+
+      <div className='page-section'>
+        <div className='headline-input'>Text Area Disabled</div>
+
+        <FormField>
+          <AmberTextArea type='text' placeholder='Type something' autoFocus={false} disabled={true} />
         </FormField>
       </div>
 
