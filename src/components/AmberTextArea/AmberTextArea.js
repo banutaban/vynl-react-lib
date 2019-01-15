@@ -1,6 +1,6 @@
 import './AmberTextArea.css';
 import React, { Component } from 'react';
-import { AmberLabel } from '../AmberLabel/AmberLabel';
+
 
 export class AmberTextArea extends Component {
     constructor() {

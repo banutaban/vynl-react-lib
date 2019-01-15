@@ -10,7 +10,7 @@ import './input.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faFont } from '@fortawesome/free-solid-svg-icons';
 
 /* Too add new icons from the Fontawesome solid free package, copy the name of the selected icon from the FA website and place the name 
 with a coma afte the faHeart on the 11th line. Don't forget to place each added icon under the 16th line, 
@@ -76,12 +76,12 @@ export const Input = () => {
 
       <div className='page-section'>
         <div className='headline-input'>Input Loading</div>
-
         <FormField>
-        <AmberInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' disabled={false} loading={true}/>
-        </FormField>
-      </div>
-
+       <AmberInput loading={true}>
+       </AmberInput>
+        </FormField> 
+      </div> 
+      
 
       <div className='page-intro'>
         <div className='headline-02'>Text Area</div>

@@ -1,6 +1,7 @@
 import './AmberInput.css';
 import React, { Component } from 'react';
 import { AmberLabel } from '../AmberLabel/AmberLabel';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -14,15 +15,27 @@ export class AmberInput extends Component {
     this.state = { focus: false, value: ''};
   }
 
-  handleFocus() {
+  handleFocus = (e, onFocus) => {
+    if(onFocus) {
+      onFocus(e)
+    }
+
     this.setState({ focus: true });
   }
-  handleBlur() {
+
+  handleBlur = (e, onBlur) => {
+    if (onBlur) {
+      onBlur(e)
+    }
+
     this.setState({ focus: false });
   }
 
-  handleOnChange(text) {
-    this.setState({ value: text });
+  handleOnChange = (e, onChange) => {
+    if(onChange) {
+      onChange(e)
+    }
+    this.setState({ value: e.target.value });
   }
 
   generateLabelClassName() {
@@ -30,14 +43,16 @@ export class AmberInput extends Component {
   }
 
   renderLabel(placeholder, externalLabel) {
-      if (!externalLabel) {
-         return (
-            <AmberLabel className={this.generateLabelClassName()}>
-                {placeholder}
-            </AmberLabel>
-            );
-        }
-  }
+    if(placeholder && placeholder !== '') {
+    if (!externalLabel) {
+       return (
+          <AmberLabel className={this.generateLabelClassName()}>
+              {placeholder}
+          </AmberLabel>
+          );
+      }
+    }
+}
 
   generateClassname(disabled) {
     const classNamearray=["amber-input-wrapper"]
@@ -49,8 +64,16 @@ export class AmberInput extends Component {
     
   }
 
+  renderIcon (loading, children) {
+    if (loading) {
+      return <div className='icon-wrapper loading'><FontAwesomeIcon icon='spinner'></FontAwesomeIcon></div>;
+    } else if (children) {
+      return <div className='icon-wrapper'>{children}</div>;
+    }
+  }
+
   render() {
-    const {
+    let {
       children,
       placeholder,
       disabled,
@@ -58,37 +81,26 @@ export class AmberInput extends Component {
       onBlur,
       onChange,
       externalLabel,
+      loading,
       ...props
     } = this.props;
+    
+    const inlinePlaceholder = externalLabel ? placeholder : undefined
+    disabled = loading ? true : disabled
+
     return (
       <div className={this.generateClassname(disabled)}>
-        {placeholder && placeholder !== ''
-          ? this.renderLabel(placeholder, externalLabel)
-          : undefined}
+        {this.renderLabel(placeholder, externalLabel)} 
         <div className='amber-input'>
           <input
-           placeholder={externalLabel? placeholder : undefined}
+            placeholder={inlinePlaceholder}
             {...props}
-            onChange={e => {
-              onChange && onChange(e);
-              this.handleOnChange(e.target.value);
-            }}
-            onFocus={e => {
-              onFocus && onFocus(e);
-              this.handleFocus();
-            }}
-            onBlur={e => {
-              onBlur && onBlur(e);
-              this.handleBlur();
-            }}
+            onChange={(e) => this.handleOnChange(e, onChange)}
+            onFocus={(e) => this.handleFocus(e, onFocus)}
+            onBlur = {(e)=>this.handleBlur(e, onBlur)}
             disabled={disabled}
-            {...props}
           />
-          {children ? (
-            <div className='icon-wrapper'>{children}</div>
-          ) : (
-            undefined
-          )}
+         {this.renderIcon(loading,children)}
         </div>
       </div>
     );
