@@ -2,6 +2,7 @@ import React from 'react';
 import { AmberRadio } from '../components/AmberRadio/AmberRadio';
 import { AmberCheckbox } from '../components/AmberCheckbox/AmberCheckbox';
 
+
 export const Toggle = () => {
   return (
     <div>
@@ -19,7 +20,12 @@ export const Toggle = () => {
       </div>
       <div className='page-section'>
         <div className='headline-04-primary'>Checkbox</div>
-        <AmberCheckbox />
+        <AmberCheckbox/>
+      </div>
+    
+      <div className='page-section'>
+        <div className='headline-04-primary'>Checkbox Disabled</div>
+        <AmberCheckbox disabled={true}/>
       </div>
     </div>
   );

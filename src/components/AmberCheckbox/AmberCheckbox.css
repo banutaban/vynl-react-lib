@@ -20,6 +20,11 @@
   background: var(--brand-100);
 }
 
+.amber-checkbox.disabled {
+  background: var(--ui-03);
+}
+
+
 .inner-icon {
   color: var(--ui-04);
 }

@@ -6,11 +6,13 @@ import './AmberCheckbox.css';
 
 library.add(faCheck);
 
+
 export class AmberCheckbox extends Component {
   constructor() {
     super();
     this.state = {
       selected: false,
+      disabled: false
     };
   }
 
@@ -20,13 +22,32 @@ export class AmberCheckbox extends Component {
     });
   }
 
+
   getClassName() {
-    return this.state.selected ? 'amber-checkbox active' : 'amber-checkbox';
+    return this.state.selected ? 'amber-checkbox active' : 'amber-checkbox'; 
   }
 
+ /*  readOnly() {
+    this.setState({
+      disabled: !this.state.disabled,
+    });
+  }
+
+
+  getClassName() {
+    return this.state.disabled ? 'amber-checkbox disabled' : 'amber-checkbox'; 
+  } */
+
+
   render() {
+    const {
+      disabled,
+      ...props
+    } = this.props;
+    
     return (
       <div
+        disabled={disabled}
         className={this.getClassName()}
         onClick={() => this.toggleSelected()}>
         {this.state.selected ? (
@@ -36,6 +57,7 @@ export class AmberCheckbox extends Component {
         ) : (
           undefined
         )}
+        
       </div>
     );
   }
