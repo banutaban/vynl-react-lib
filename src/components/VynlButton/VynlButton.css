@@ -69,9 +69,9 @@
   border: 2px solid #e3e9f1;
 }
 
-/* TEXT BUTTON */
+/* GHOST BUTTON */
 
-.vynl-button.text {
+.vynl-button.ghost {
   background: transparent;
   box-shadow: none;
   color: var(--brand-100);
@@ -79,16 +79,16 @@
   outline: 0;
 }
 
-.vynl-button.text:hover {
+.vynl-button.ghost:hover {
   background: #f0e3f6;
 }
 
-.vynl-button.text:active,
-.vynl-button.text:focus {
+.vynl-button.ghost:active,
+.vynl-button.ghost:focus {
   background: #e1c7ec;
 }
 
-.vynl-button.text:disabled {
+.vynl-button.ghost:disabled {
   color: var(--text-02);
   border: 0;
 }
@@ -212,13 +212,6 @@
 
 .vynl-button.onlyicon:disabled {
   color: var(--ui-03);
-}
-
-/* TOGGLE BUTTON */
-
-.vynl-button.toggle-btn.btn-group {
-  background: transparent;
-  box-shadow: none;
 }
 
 /* SPINNER*/
