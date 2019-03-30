@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './AmberRadio.css';
+import './VynlRadio.css';
 
-export class AmberRadio extends Component {
+export class VynlRadio extends Component {
   constructor() {
     super();
     this.state = {
@@ -19,7 +19,7 @@ export class AmberRadio extends Component {
   render() {
     return (
       <div
-        className={this.state.selected ? 'amber-radio active' : 'amber-radio'}
+        className={this.state.selected ? 'vynl-radio active' : 'vynl-radio'}
         onClick={() => this.toggleSelected()}>
         {this.state.selected ? <div className='inner-circle' /> : undefined}
       </div>

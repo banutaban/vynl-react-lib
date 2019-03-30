@@ -1,6 +1,6 @@
-import './AmberInput.css';
+import './VynlInput.css';
 import React, { Component } from 'react';
-import { AmberLabel } from '../AmberLabel/AmberLabel';
+import { VynlLabel } from '../VynlLabel/VynlLabel';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ library.add(faSpinner);
 
 
 
-export class AmberInput extends Component {
+export class VynlInput extends Component {
   constructor() {
     super();
     this.state = { focus: false, value: ''};
@@ -46,16 +46,16 @@ export class AmberInput extends Component {
     if(placeholder && placeholder !== '') {
     if (!externalLabel) {
        return (
-          <AmberLabel className={this.generateLabelClassName()}>
+          <VynlLabel className={this.generateLabelClassName()}>
               {placeholder}
-          </AmberLabel>
+          </VynlLabel>
           );
       }
     }
 }
 
   generateClassname(disabled) {
-    const classNamearray=["amber-input-wrapper"]
+    const classNamearray=["vynl-input-wrapper"]
     if (this.state.focus) {
       classNamearray.push("focus");
     }
@@ -91,7 +91,7 @@ export class AmberInput extends Component {
     return (
       <div className={this.generateClassname(disabled)}>
         {this.renderLabel(placeholder, externalLabel)} 
-        <div className='amber-input'>
+        <div className='vynl-input'>
           <input
             placeholder={inlinePlaceholder}
             {...props}

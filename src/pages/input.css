@@ -1,10 +1,10 @@
-.inputpage .amber-input {
+.inputpage .vynl-input {
   margin-right: 24px;
   margin-bottom: 24px;
 }
 
-.inputpage .amber-button .onlyicon:hover,
-.inputpage .amber-button .onlyicon:active,
-.inputpage .amber-button .onlyicon:focus {
+.inputpage .vynl-button .onlyicon:hover,
+.inputpage .vynl-button .onlyicon:active,
+.inputpage .vynl-button .onlyicon:focus {
   background: transparent;
 }

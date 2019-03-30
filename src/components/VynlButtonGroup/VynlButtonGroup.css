@@ -7,13 +7,13 @@
   border: 2px solid var(--brand-100);
 }
 
-.buttonGroup .amber-button.text:hover {
+.buttonGroup .vynl-button.text:hover {
   border-radius: none;
   background: transparent;
 }
 
-.buttonGroup .amber-button.text:active,
-.buttonGroup .amber-button.text:focus {
+.buttonGroup .vynl-button.text:active,
+.buttonGroup .vynl-button.text:focus {
   border-radius: 0;
   background: var(--brand-100);
   color: #fff;

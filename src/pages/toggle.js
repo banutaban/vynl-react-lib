@@ -1,6 +1,6 @@
 import React from 'react';
-import { AmberRadio } from '../components/AmberRadio/AmberRadio';
-import { AmberCheckbox } from '../components/AmberCheckbox/AmberCheckbox';
+import { VynlRadio } from '../components/VynlRadio/VynlRadio';
+import { VynlCheckbox } from '../components/VynlCheckbox/VynlCheckbox';
 
 
 export const Toggle = () => {
@@ -16,16 +16,16 @@ export const Toggle = () => {
       </div>
       <div className='page-section'>
         <div className='headline-04-primary'>Radio</div>
-        <AmberRadio />
+        <VynlRadio />
       </div>
       <div className='page-section'>
         <div className='headline-04-primary'>Checkbox</div>
-        <AmberCheckbox/>
+        <VynlCheckbox/>
       </div>
     
       <div className='page-section'>
         <div className='headline-04-primary'>Checkbox Disabled</div>
-        <AmberCheckbox disabled={true}/>
+        <VynlCheckbox disabled={true}/>
       </div>
     </div>
   );

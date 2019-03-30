@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import './AmberCheckbox.css';
+import './VynlCheckbox.css';
 
 library.add(faCheck);
 
 
-export class AmberCheckbox extends Component {
+export class VynlCheckbox extends Component {
   constructor() {
     super();
     this.state = {
@@ -24,7 +24,7 @@ export class AmberCheckbox extends Component {
 
 
   getClassName() {
-    return this.state.selected ? 'amber-checkbox active' : 'amber-checkbox'; 
+    return this.state.selected ? 'vynl-checkbox active' : 'vynl-checkbox'; 
   }
 
  /*  readOnly() {
@@ -35,7 +35,7 @@ export class AmberCheckbox extends Component {
 
 
   getClassName() {
-    return this.state.disabled ? 'amber-checkbox disabled' : 'amber-checkbox'; 
+    return this.state.disabled ? 'vynl-checkbox disabled' : 'vynl-checkbox'; 
   } */
 
 

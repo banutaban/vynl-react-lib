@@ -1,8 +1,8 @@
-import './AmberTextArea.css';
+import './VynlTextArea.css';
 import React, { Component } from 'react';
 
 
-export class AmberTextArea extends Component {
+export class VynlTextArea extends Component {
     constructor() {
       super();
       this.state = { focus: false, value: ''};
@@ -31,7 +31,7 @@ export class AmberTextArea extends Component {
       } = this.props;
 
       return (
-        <div className={this.state.focus ? 'amber-text-area focus' : 'amber-text-area'}>
+        <div className={this.state.focus ? 'vynl-text-area focus' : 'vynl-text-area'}>
           <textarea
           disabled= {disabled}
           placeholder= {placeholder}

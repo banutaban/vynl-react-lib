@@ -1,6 +1,6 @@
 import React from 'react';
-import './AmberButtonGroup.css';
+import './VynlButtonGroup.css';
 
-export const AmberButtonGroup = ({ children }) => {
+export const VynlButtonGroup = ({ children }) => {
   return <div className='buttonGroup'>{children}</div>;
 };

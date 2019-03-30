@@ -1,5 +1,5 @@
 
-# Amber Design System 
+# Vynl Design System 
 ## React Component Library
 
 A ready to use, generic design system. 

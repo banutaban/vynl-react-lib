@@ -1,9 +1,9 @@
 import React from 'react';
-import { AmberInput } from '../components/AmberInput/AmberInput';
+import { VynlInput } from '../components/VynlInput/VynlInput';
 import { FormField } from '../components/FormField/FormField';
-import { AmberLabel } from '../components/AmberLabel/AmberLabel';
-import { AmberButton } from '../components/AmberButton/AmberButton';
-import { AmberTextArea } from '../components/AmberTextArea/AmberTextArea';
+import { VynlLabel } from '../components/VynlLabel/VynlLabel';
+import { VynlButton } from '../components/VynlButton/VynlButton';
+import { VynlTextArea } from '../components/VynlTextArea/VynlTextArea';
 import './input.css';
 
 /* ICONS */
@@ -34,11 +34,11 @@ export const Input = () => {
         <div className='headline-input'>Input Default</div>
 
         <FormField>
-          <AmberInput type='text' placeholder='email address' autoFocus='' autoComplete='' name='email' />
+          <VynlInput type='text' placeholder='email address' autoFocus='' autoComplete='' name='email' />
         </FormField>
 
         <FormField>
-          <AmberInput type='password' placeholder='password' autoFocus='' autoComplete='' name='password' />
+          <VynlInput type='password' placeholder='password' autoFocus='' autoComplete='' name='password' />
         </FormField>
       </div>
 
@@ -46,8 +46,8 @@ export const Input = () => {
         <div className='headline-04-primary'>Input with Multi Labels</div>
 
         <FormField>
-          <AmberLabel>Set Password</AmberLabel>
-          <AmberInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' />
+          <VynlLabel>Set Password</VynlLabel>
+          <VynlInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' />
         </FormField>
       </div>
 
@@ -55,13 +55,13 @@ export const Input = () => {
         <div className='headline-input'>Input with Icon</div>
 
         <FormField>
-          <AmberInput type='password' placeholder='password' autoFocus='' autoComplete='' name='email'>
-          <AmberButton size='small' kind='onlyicon'>
+          <VynlInput type='password' placeholder='password' autoFocus='' autoComplete='' name='email'>
+          <VynlButton size='small' kind='onlyicon'>
           <div className='iconwrappers'>
             <FontAwesomeIcon icon='eye' />
           </div>
-          </AmberButton>
-          </AmberInput>
+          </VynlButton>
+          </VynlInput>
         </FormField>
       </div>
 
@@ -69,7 +69,7 @@ export const Input = () => {
         <div className='headline-input'>Input Disabled</div>
 
         <FormField>
-        <AmberInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' disabled={true}/>
+        <VynlInput type='text' placeholder='password' autoFocus='' autoComplete='' name='email' disabled={true}/>
         </FormField>
       </div>
 
@@ -77,8 +77,8 @@ export const Input = () => {
       <div className='page-section'>
         <div className='headline-input'>Input Loading</div>
         <FormField>
-       <AmberInput loading={true}>
-       </AmberInput>
+       <VynlInput loading={true}>
+       </VynlInput>
         </FormField> 
       </div> 
       
@@ -96,7 +96,7 @@ export const Input = () => {
         <div className='headline-input'>Text Area Default</div>
 
         <FormField>
-          <AmberTextArea type='text' placeholder='Type something' autoFocus='' />
+          <VynlTextArea type='text' placeholder='Type something' autoFocus='' />
         </FormField>
 
       </div>
@@ -105,7 +105,7 @@ export const Input = () => {
         <div className='headline-input'>Text Area with Icon</div>
 
         <FormField>
-          <AmberTextArea type='text' placeholder='Type something' autoFocus='' />
+          <VynlTextArea type='text' placeholder='Type something' autoFocus='' />
         </FormField>
       </div>
 
@@ -113,7 +113,7 @@ export const Input = () => {
         <div className='headline-input'>Text Area Disabled</div>
 
         <FormField>
-          <AmberTextArea type='text' placeholder='Type something' autoFocus={false} disabled={true} />
+          <VynlTextArea type='text' placeholder='Type something' autoFocus={false} disabled={true} />
         </FormField>
       </div>
 

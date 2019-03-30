@@ -1,6 +1,6 @@
 import React from 'react';
-import { AmberButton } from '../components/AmberButton/AmberButton';
-import { AmberButtonGroup } from '../components/AmberButtonGroup/AmberButtonGroup';
+import { VynlButton } from '../components/VynlButton/VynlButton';
+import { VynlButtonGroup } from '../components/VynlButtonGroup/VynlButtonGroup';
 import './button.css';
 
 /* ICONS */
@@ -30,220 +30,220 @@ export const Button = () => {
       <div className='page-section'>
         <div className='headline-04-primary'>Contained Button</div>
 
-        <AmberButton size='small'>Small Button</AmberButton>
+        <VynlButton size='small'>Small Button</VynlButton>
 
-        <AmberButton size='small' loading={true} />
+        <VynlButton size='small' loading={true} />
 
-        <AmberButton size='small' disabled={true}>
+        <VynlButton size='small' disabled={true}>
           Small Button
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium'>Medium Button</AmberButton>
+        <VynlButton size='medium'>Medium Button</VynlButton>
 
-        <AmberButton size='medium' loading={true} />
+        <VynlButton size='medium' loading={true} />
 
-        <AmberButton size='medium' disabled={true}>
+        <VynlButton size='medium' disabled={true}>
           Medium Button
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large'>Large Button</AmberButton>
+        <VynlButton size='large'>Large Button</VynlButton>
 
-        <AmberButton size='large' loading={true} />
+        <VynlButton size='large' loading={true} />
 
-        <AmberButton size='large' disabled={true}>
+        <VynlButton size='large' disabled={true}>
           Large Button
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>Outline Button</div>
 
-        <AmberButton size='small' kind='outline'>
+        <VynlButton size='small' kind='outline'>
           Outline Button S{' '}
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='small' kind='outline' loading={true} />
+        <VynlButton size='small' kind='outline' loading={true} />
 
-        <AmberButton size='small' kind='outline' disabled={true}>
+        <VynlButton size='small' kind='outline' disabled={true}>
           Outline Button S
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='outline'>
+        <VynlButton size='medium' kind='outline'>
           Outline Button M
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='outline' loading={true} />
+        <VynlButton size='medium' kind='outline' loading={true} />
 
-        <AmberButton size='medium' kind='outline' disabled={true}>
+        <VynlButton size='medium' kind='outline' disabled={true}>
           Outline Button M
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='outline'>
+        <VynlButton size='large' kind='outline'>
           Outline Button L
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='outline' loading={true} />
+        <VynlButton size='large' kind='outline' loading={true} />
 
-        <AmberButton size='large' kind='outline' disabled={true}>
+        <VynlButton size='large' kind='outline' disabled={true}>
           Outline Button L
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>Text Button</div>
 
-        <AmberButton size='small' kind='text'>
+        <VynlButton size='small' kind='text'>
           Text Button S
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='small' kind='text' loading={true}>
+        <VynlButton size='small' kind='text' loading={true}>
           Text Button S
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='small' kind='text' disabled={true}>
+        <VynlButton size='small' kind='text' disabled={true}>
           Text Button S
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='text'>
+        <VynlButton size='medium' kind='text'>
           Text Button M
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='text' loading={true}>
+        <VynlButton size='medium' kind='text' loading={true}>
           Text Button M
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='text' disabled={true}>
+        <VynlButton size='medium' kind='text' disabled={true}>
           Text Button M
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='text'>
+        <VynlButton size='large' kind='text'>
           Text Button L
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='text' loading={true}>
+        <VynlButton size='large' kind='text' loading={true}>
           Text Button L
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='text' disabled={true}>
+        <VynlButton size='large' kind='text' disabled={true}>
           Text Button L
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>Button with Icon and Label</div>
 
-        <AmberButton size='small' kind='withicon'>
+        <VynlButton size='small' kind='withicon'>
           <div className='iconwrappers'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrappers'>With Icon S</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='small' kind='withicon' loading={true}>
+        <VynlButton size='small' kind='withicon' loading={true}>
           <div className='iconwrappers'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrappers'>With Icon S</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='small' kind='withicon' disabled={true}>
+        <VynlButton size='small' kind='withicon' disabled={true}>
           <div className='iconwrappers'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrappers'>With Icon S</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='withicon'>
+        <VynlButton size='medium' kind='withicon'>
           <div className='iconwrapperm'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperm'>With Icon M</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='withicon' loading={true}>
+        <VynlButton size='medium' kind='withicon' loading={true}>
           <div className='iconwrapperm'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperm'>With Icon M</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='medium' kind='withicon' disabled={true}>
+        <VynlButton size='medium' kind='withicon' disabled={true}>
           <div className='iconwrapperm'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperm'>With Icon M</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='withicon'>
+        <VynlButton size='large' kind='withicon'>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperl'>With Icon L</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='withicon' loading={true}>
+        <VynlButton size='large' kind='withicon' loading={true}>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperl'>With Icon L</div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='withicon' disabled={true}>
+        <VynlButton size='large' kind='withicon' disabled={true}>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
           <div className='labelwrapperl'>With Icon L</div>
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>FAB</div>
 
-        <AmberButton size='large' kind='fab'>
+        <VynlButton size='large' kind='fab'>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='fab' disabled={true}>
+        <VynlButton size='large' kind='fab' disabled={true}>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>Button with Only Icon</div>
 
-        <AmberButton size='large' kind='onlyicon'>
+        <VynlButton size='large' kind='onlyicon'>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
-        </AmberButton>
+        </VynlButton>
 
-        <AmberButton size='large' kind='onlyicon' disabled={true}>
+        <VynlButton size='large' kind='onlyicon' disabled={true}>
           <div className='iconwrapperl'>
             <FontAwesomeIcon icon='heart' />
           </div>
-        </AmberButton>
+        </VynlButton>
       </div>
 
       <div className='page-section'>
         <div className='headline-04-primary'>Button Group</div>
 
-        <AmberButtonGroup>
-          <AmberButton size='small' kind='text'>
+        <VynlButtonGroup>
+          <VynlButton size='small' kind='text'>
             Bold
-          </AmberButton>
+          </VynlButton>
 
-          <AmberButton size='small' kind='text'>
+          <VynlButton size='small' kind='text'>
             Italic
-          </AmberButton>
+          </VynlButton>
 
-          <AmberButton size='small' kind='text'>
+          <VynlButton size='small' kind='text'>
             Underline
-          </AmberButton>
-        </AmberButtonGroup>
+          </VynlButton>
+        </VynlButtonGroup>
       </div>
     </div>
   );

@@ -6,11 +6,11 @@ export const FormField = ({ children }) => {
  
   children = React.Children.map(children, (child, index) => {
 
-    if (child.type.name === "AmberLabel") {
+    if (child.type.name === "VynlLabel") {
   
       isLabelFound = true;
     };
-    if (child.type.name === "AmberInput" && isLabelFound) {
+    if (child.type.name === "VynlInput" && isLabelFound) {
    
       return React.cloneElement(child, {externalLabel: isLabelFound})
     } else {

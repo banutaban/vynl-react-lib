@@ -1,4 +1,4 @@
-.amber-input-wrapper {
+.vynl-input-wrapper {
   width: 100%;
   min-width: 192px;
   max-width: 300px;
@@ -9,32 +9,32 @@
   position: relative;
 }
 
-.amber-input-wrapper.focus {
+.vynl-input-wrapper.focus {
   border: 1px solid var(--brand-100);
 }
 
 
 
-.amber-input-wrapper .amber-label {
+.vynl-input-wrapper .vynl-label {
   position: absolute;
   top: -26px;
   left: 0;
   transition: all linear 200ms;
 }
 
-.amber-input-wrapper.disabled {
+.vynl-input-wrapper.disabled {
   background: var(--ui-03);
   color: var(--text-02);
 }
 
-.amber-input-wrapper .amber-input input::placeholder {
+.vynl-input-wrapper .vynl-input input::placeholder {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
   color: var(--text-02);
 }
 
-.amber-input-wrapper .amber-label.placeholder {
+.vynl-input-wrapper .vynl-label.placeholder {
   color: var(--text-02);
   background: transparent;
   padding: 0;
@@ -47,7 +47,7 @@
 
 
 
-.amber-input {
+.vynl-input {
   width: 100%;
   height: 100%;
   display: flex;
@@ -57,7 +57,7 @@
   position: absolute;
 }
 
-.amber-input input {
+.vynl-input input {
   flex-grow: 1;
   height: 100%;
   background: transparent;
@@ -72,7 +72,7 @@
 }
 
 
-.amber-input .icon-wrapper {
+.vynl-input .icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@
 }
 
 
-.amber-input .icon-wrapper.loading {
+.vynl-input .icon-wrapper.loading {
   color: var(--brand-100);
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
@@ -121,18 +121,18 @@
 }
 
 
-.amber-input .icon-wrapper .amber-button.onlyicon {
+.vynl-input .icon-wrapper .vynl-button.onlyicon {
   width: 48px;
   height: 48px;
 }
 
-.amber-input .icon-wrapper .amber-button.onlyicon:hover,
-.amber-input .icon-wrapper .amber-button.onlyicon:active,
-.amber-input .icon-wrapper .amber-button.onlyicon:focus {
+.vynl-input .icon-wrapper .vynl-button.onlyicon:hover,
+.vynl-input .icon-wrapper .vynl-button.onlyicon:active,
+.vynl-input .icon-wrapper .vynl-button.onlyicon:focus {
   background: transparent;
 }
 
-.amber-input .icon-wrapper .amber-button.onlyicon:active,
-.amber-input .icon-wrapper .amber-button.onlyicon:focus {
+.vynl-input .icon-wrapper .vynl-button.onlyicon:active,
+.vynl-input .icon-wrapper .vynl-button.onlyicon:focus {
   color: var(--brand-100);
 }
