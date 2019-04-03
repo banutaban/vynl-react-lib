@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import '../../App.css';
 import {VynlButton} from './VynlButton';
+import {VynlTheming} from '../VynlTheming/VynlTheming';
 
 /* ICONS */
 
@@ -17,7 +17,7 @@ as the same format at the 16th line. */
 library.add(faHeart);
 
 storiesOf('VynlButton', module)
-  .add('Contained Button', () => <div className='page-section'>
+  .add('Contained Button', () => <VynlTheming><div className='page-section'>
   <div className='headline-04-primary'>Contained Button</div>
 
   <VynlButton size='small'>Small Button</VynlButton>
@@ -43,10 +43,10 @@ storiesOf('VynlButton', module)
   <VynlButton size='large' disabled={true}>
     Large Button
   </VynlButton>
-</div>)
+</div></VynlTheming>)
 
 
-.add('Outline Button', () => <div className='page-section'>
+.add('Outline Button', () => <VynlTheming><div className='page-section'>
 <div className='headline-04-primary'>Outline Button</div>
 
 <VynlButton size='small' kind='outline'>
@@ -78,9 +78,9 @@ storiesOf('VynlButton', module)
 <VynlButton size='large' kind='outline' disabled={true}>
   Outline Button L
 </VynlButton>
-</div>)
+</div></VynlTheming>)
 
-.add('Ghost Button', () => <div className='page-section'>
+.add('Ghost Button', () => <VynlTheming><div className='page-section'>
 <div className='headline-04-primary'>Ghost Button</div>
 
 <VynlButton size='small' kind='ghost'>
@@ -118,9 +118,9 @@ storiesOf('VynlButton', module)
 <VynlButton size='large' kind='ghost' disabled={true}>
   Ghost Button L
 </VynlButton>
-</div>)
+</div></VynlTheming>)
 
-.add('Button with Icn and Label', () => <div className='page-section'>
+.add('Button with Icn and Label', () => <VynlTheming><div className='page-section'>
 <div className='headline-04-primary'>Button with Icon and Label</div>
 
 <VynlButton size='small' kind='withicon'>
@@ -201,9 +201,9 @@ storiesOf('VynlButton', module)
     <FontAwesomeIcon icon='heart' />
   </div>
 </VynlButton>
-</div>)
+</div></VynlTheming>)
 
-.add('Button with Only Icon', () => <div className='page-section'>
+.add('Button with Only Icon', () => <VynlTheming><div className='page-section'>
 <div className='headline-04-primary'>Button with Only Icon</div>
 
 <VynlButton size='large' kind='onlyicon'>
@@ -217,5 +217,5 @@ storiesOf('VynlButton', module)
     <FontAwesomeIcon icon='heart' />
   </div>
 </VynlButton>
-</div>)
+</div></VynlTheming>)
 

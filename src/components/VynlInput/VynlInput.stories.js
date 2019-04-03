@@ -1,25 +1,10 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import '../../App.css';
 import {VynlInput} from './VynlInput';
 import { FormField } from '../FormField/FormField';
-import { VynlLabel } from '../VynlLabel/VynlLabel';
-import { VynlButton } from '../VynlButton/VynlButton';
 import { VynlTextArea } from '../VynlTextArea/VynlTextArea';
 
-
-/* ICONS */
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faFont } from '@fortawesome/free-solid-svg-icons';
-
-/* Too add new icons from the Fontawesome solid free package, copy the name of the selected icon from the FA website and place the name 
-with a coma afte the faHeart on the 11th line. Don't forget to place each added icon under the 16th line, 
-as the same format at the 16th line. */
-
-library.add(faEye);
 
 storiesOf('VynlInput', module)
   .add('Input Default', () => <div className='page-section'>

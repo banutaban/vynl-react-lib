@@ -2,8 +2,8 @@
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  border: 1px solid var(--ui-06);
-  background: var(--ui-04);
+  border: 1px solid var(--color-primary-70);
+  background: var(--color-primary-20);
   outline: 0;
   display: flex;
   align-items: center;
@@ -15,16 +15,16 @@
 .vynl-checkbox.active {
   width: 20px;
   height: 20px;
-  border: 1px solid var(--brand-100);
+  border: 1px solid var(--color-primary-70);
   border-radius: 3px;
-  background: var(--brand-100);
+  background: var(--color-primary-70);
 }
 
 .vynl-checkbox.disabled {
-  background: var(--ui-03);
+  background: var(--color-primary-20);
 }
 
 
 .inner-icon {
-  color: var(--ui-04);
+  color: var(--color-primary-20);
 }

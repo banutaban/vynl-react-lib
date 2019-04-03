@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.vynl-theming {
+    --color-primary-10: #f8f8fc;
+    --color-primary-20: #dedefc;
+    --color-primary-30: #c0c0fc;
+    --color-primary-50: #7a7ae6;
+    --color-primary-60: #6363d9;
+    --color-primary-70: #4242A6;
+    --color-primary-100: #08084e;
+    --color-secondary-10: #fcf8f9;
+    --color-secondary-20: #fcdee9;
+    --color-secondary-30: #fcc0d6;
+    --color-secondary-50: #e67aa1;
+    --color-secondary-60: #d9638e;
+    --color-secondary-70: #D30B54;
+    --color-secondary-100: #4e0822;
+    --color-success-10: #f8fbfc;
+    --color-success-20: #def7fc;
+    --color-success-30: #c0f2fc;
+    --color-success-50: #7ad3e6;
+    --color-success-60: #63c5d9;
+    --color-success-70: #0996B3;
+    --color-success-100: #08424e;
+    --color-info-10: #f8fafc;
+    --color-info-20: #deedfc;
+    --color-info-30: #c0defc;
+    --color-info-50: #7ab0e6;
+    --color-info-60: #639ed9;
+    --color-info-70: #0B6FD3;
+    --color-info-100: #082b4e;
+    --color-warning-10: #fcfaf8;
+    --color-warning-20: #fcf0de;
+    --color-warning-30: #fce3c0;
+    --color-warning-50: #e6b97a;
+    --color-warning-60: #d9a863;
+    --color-warning-70: #D3800B;
+    --color-warning-100: #4e3108;
+    --color-danger-10: #fcf8f8;
+    --color-danger-20: #fce1de;
+    --color-danger-30: #fcc5c0;
+    --color-danger-50: #e6837a;
+    --color-danger-60: #d96d63;
+    --color-danger-70: #D31C0B;
+    --color-danger-100: #4e0e08;
+    --color-grey-10: #FFFFFF;
+    --color-grey-20: #ECEFF1;
+    --color-grey-30: #CFD8DC;
+    --color-grey-50: #90A4AE;
+    --color-grey-60: #78909C;
+    --color-grey-70: #617D8B;
+    --color-grey-100: #374750;
+
+    
+
+    
+    --text-02: rgb(148, 165, 175);
+    --text-03: var(--color-secondary-70);
+    --text-inverse: var(--color-primary-20);
+   
+    --color-danger-70: #ec4850;
+  }
+  
+  /* Dark Theme will be placed here! */
+  
+  /* Text Styles */
+ .vynl-theming {
+    --font-size-xs: 12px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 48px;
+  }
+  
+
+  .vynl-theming .display-large {
+    font-size: var(--font-size-xxl);
+    font-weight: bold;
+    line-height: 56px;
+    color: var(--text-04);
+  }
+  
+  .vynl-theming .display-small {
+    font-size: var(--font-size-l);
+    font-weight: bold;
+    line-height: 32px;
+    color: var(--text-04);
+  }
+  
+  .vynl-theming .headline-01 {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    line-height: 40px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .headline-02 {
+    font-size: var(--font-size-l);
+    font-weight: bold;
+    line-height: 32px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .headline-03 {
+    font-size: var(--font-size-m);
+    font-weight: bold;
+    line-height: 28px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .headline-04-primary {
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .headline-04-secondary {
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--text-02);
+  }
+  
+  .vynl-theming .paragraph {
+    font-size: var(--font-size-s);
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .style-link {
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--text-04);
+  }
+  
+  .vynl-theming .caption-primary {
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--color-grey-100);
+  }
+  
+  .vynl-theming .caption-secondary {
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--text-02);
+  }
+  
+  .vynl-theming .caption-support {
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--color-danger-70);
+  }
+  
+  .vynl-theming .caption-link {
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--text-04);
+  }
+

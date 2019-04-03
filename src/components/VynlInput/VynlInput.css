@@ -4,13 +4,13 @@
   max-width: 300px;
   height: 48px;
   border-radius: 3px;
-  border: 1px solid var(--ui-06);
+  border: 1px solid var(--color-primary-70);
   background: #fff;
   position: relative;
 }
 
 .vynl-input-wrapper.focus {
-  border: 1px solid var(--brand-100);
+  border: 1px solid var(--color-primary-70);
 }
 
 
@@ -23,7 +23,7 @@
 }
 
 .vynl-input-wrapper.disabled {
-  background: var(--ui-03);
+  background: var(--color-primary-20);
   color: var(--text-02);
 }
 
@@ -61,7 +61,7 @@
   flex-grow: 1;
   height: 100%;
   background: transparent;
-  color: var(--text-01);
+  color: var(--color-grey-100);
   font-size: var(--font-size-s);
   font-weight: normal;
   border: 0;
@@ -78,7 +78,7 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  color: var(--ui-06);
+  color: var(--color-primary-70);
 }
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -112,7 +112,7 @@
 
 
 .vynl-input .icon-wrapper.loading {
-  color: var(--brand-100);
+  color: var(--color-primary-70);
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;
@@ -134,5 +134,5 @@
 
 .vynl-input .icon-wrapper .vynl-button.onlyicon:active,
 .vynl-input .icon-wrapper .vynl-button.onlyicon:focus {
-  color: var(--brand-100);
+  color: var(--color-primary-70);
 }

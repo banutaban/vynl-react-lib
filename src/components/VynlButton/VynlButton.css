@@ -4,7 +4,7 @@
   min-width: 192px;
   height: 48px;
   border-radius: 3px;
-  background: var(--brand-100);
+  background: var(--color-primary-70);
   box-shadow: 0 1px 2px 0 rgba(27, 25, 25, 0.25);
   color: #fff;
   font-size: 20px;
@@ -16,13 +16,14 @@
 }
 
 .vynl-button:hover {
-  background: var(--brand-110);
+  background: var(--color-primary-60);
   box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.4);
+  
 }
 
 .vynl-button:active,
 .vynl-button:focus {
-  background: var(--brand-120);
+  background: var(--color-primary-50);
 }
 
 .vynl-button.large {
@@ -36,7 +37,7 @@
 }
 
 .vynl-button:disabled {
-  background: var(--ui-06);
+  background: var(--color-grey-30);
   box-shadow: none;
   color: var(--text-02);
   pointer-events: none;
@@ -51,22 +52,23 @@
 .vynl-button.outline {
   background: transparent;
   box-shadow: none;
-  color: var(--brand-100);
-  border: 2px solid var(--brand-100);
+  color: var(--color-primary-70);
+  border: 2px solid var(--color-primary-70);
 }
 
 .vynl-button.outline:hover {
-  background: #f0e3f6;
+  background: var(--color-primary-60);
+
 }
 
 .vynl-button.outline:active,
 .vynl-button.outline:focus {
-  background: #e1c7ec;
+  background: var(--color-primary-50);
 }
 
 .vynl-button.outline:disabled {
-  color: var(--text-02);
-  border: 2px solid #e3e9f1;
+  color: var(--color-grey-40);
+  border: 2px solid var(--color-grey-40);
 }
 
 /* GHOST BUTTON */
@@ -74,22 +76,23 @@
 .vynl-button.ghost {
   background: transparent;
   box-shadow: none;
-  color: var(--brand-100);
+  color: var(--color-primary-70);
   border: 0;
   outline: 0;
 }
 
 .vynl-button.ghost:hover {
-  background: #f0e3f6;
+  background: var(--color-primary-60);
+  color: var(--color-primary-70);
 }
 
 .vynl-button.ghost:active,
 .vynl-button.ghost:focus {
-  background: #e1c7ec;
+  background: var(--color-primary-50);
 }
 
 .vynl-button.ghost:disabled {
-  color: var(--text-02);
+  color: var(--color-grey-40);
   border: 0;
 }
 
@@ -102,7 +105,7 @@
 }
 
 .heart {
-  color: var(--ui-06);
+  color: var(--color-primary-70);
 }
 
 /* Medium */
@@ -187,7 +190,7 @@
 .vynl-button.onlyicon {
   background: transparent;
   box-shadow: none;
-  color: var(--ui-06);
+  color: var(--color-primary-70);
 }
 
 .vynl-button.onlyicon .iconwrapperl {
@@ -200,18 +203,18 @@
 }
 
 .vynl-button.onlyicon .iconwrapperl:hover {
-  background: #f0e3f6;
-  color: var(--brand-100);
+  background: var(--color-primary-60);
+  color: var(--color-grey-40);
 }
 
 .vynl-button.onlyicon .iconwrapperl:active,
 .vynl-button.onlyicon .iconwrapperl:focus {
-  background: #e1c7ec;
-  color: var(--brand-100);
+  background: var(--color-primary-50);
+  color: var(--color-grey-40);
 }
 
 .vynl-button.onlyicon:disabled {
-  color: var(--ui-03);
+  color: var(--color-grey-30);
 }
 
 /* SPINNER*/

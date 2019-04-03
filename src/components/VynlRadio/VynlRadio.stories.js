@@ -1,7 +1,6 @@
-import React from 'react';
 
+import React from 'react';
 import { storiesOf } from '@storybook/react';
-import '../../App.css';
 import {VynlRadio} from './VynlRadio';
 
 
