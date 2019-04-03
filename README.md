@@ -1,10 +1,8 @@
 
-# Vynl Design System 
-## React Component Library
+# Vynl UI 
+## A React Component Library
 
-A ready to use, generic design system. 
-
-To be completed soon...
+Started by a product designer to help with her fun projects, now it's becoming an open source component library and soon will be calling for contributors.
 
 26 December 2018
 
