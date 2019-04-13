@@ -7,7 +7,7 @@
   background: var(--color-primary-70);
   box-shadow: 0 1px 2px 0 rgba(27, 25, 25, 0.25);
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   border: 0;
   outline: 0;
@@ -28,12 +28,11 @@
 
 .vynl-button.large {
   height: 56px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .vynl-button.small {
   height: 40px;
-  font-size: 16px;
 }
 
 .vynl-button:disabled {
@@ -194,8 +193,28 @@
 }
 
 .vynl-button.onlyicon .iconwrapperl {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
+  border-radius: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.vynl-button.onlyicon .iconwrapperm {
+  width: 32px;
+  height: 32px;
+  border-radius: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.vynl-button.onlyicon .iconwrappers {
+  width: 24px;
+  height: 24px;
   border-radius: 28px;
   display: inline-flex;
   align-items: center;
@@ -213,9 +232,55 @@
   color: var(--color-grey-40);
 }
 
+.vynl-button.onlyicon .iconwrapperm:hover {
+  background: var(--color-primary-60);
+  color: var(--color-grey-40);
+}
+
+.vynl-button.onlyicon .iconwrapperm:active,
+.vynl-button.onlyicon .iconwrapperm:focus {
+  background: var(--color-primary-50);
+  color: var(--color-grey-40);
+}
+
+.vynl-button.onlyicon .iconwrappers:hover {
+  background: var(--color-primary-60);
+  color: var(--color-grey-40);
+}
+
+.vynl-button.onlyicon .iconwrappers:active,
+.vynl-button.onlyicon .iconwrappers:focus {
+  background: var(--color-primary-50);
+  color: var(--color-grey-40);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .vynl-button.onlyicon:disabled {
   color: var(--color-grey-30);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* SPINNER*/
 
