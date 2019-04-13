@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import {VynlButton} from './VynlButton';
-import {VynlTheming} from '../VynlTheming/VynlTheming';
+import { VynlButton } from './VynlButton';
+import { VynlTheming } from '../VynlTheming/VynlTheming';
 
 /* ICONS */
 
@@ -17,205 +17,227 @@ as the same format at the 16th line. */
 library.add(faHeart);
 
 storiesOf('VynlButton', module)
-  .add('Contained Button', () => <VynlTheming><div className='page-section'>
-  <div className='headline-04-primary'>Contained Button</div>
+  .add('Contained Button', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>Contained Button</div>
 
-  <VynlButton size='small'>Small Button</VynlButton>
+        <VynlButton size='small'>Small Button</VynlButton>
 
-  <VynlButton size='small' loading={true} />
+        <VynlButton size='small' loading={true} />
 
-  <VynlButton size='small' disabled={true}>
-    Small Button
-  </VynlButton>
+        <VynlButton size='small' disabled={true}>
+          Small Button
+        </VynlButton>
 
-  <VynlButton size='medium'>Medium Button</VynlButton>
+        <VynlButton size='medium'>Medium Button</VynlButton>
 
-  <VynlButton size='medium' loading={true} />
+        <VynlButton size='medium' loading={true} />
 
-  <VynlButton size='medium' disabled={true}>
-    Medium Button
-  </VynlButton>
+        <VynlButton size='medium' disabled={true}>
+          Medium Button
+        </VynlButton>
 
-  <VynlButton size='large'>Large Button</VynlButton>
+        <VynlButton size='large'>Large Button</VynlButton>
 
-  <VynlButton size='large' loading={true} />
+        <VynlButton size='large' loading={true} />
 
-  <VynlButton size='large' disabled={true}>
-    Large Button
-  </VynlButton>
-</div></VynlTheming>)
+        <VynlButton size='large' disabled={true}>
+          Large Button
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ))
 
+  .add('Outline Button', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>Outline Button</div>
 
-.add('Outline Button', () => <VynlTheming><div className='page-section'>
-<div className='headline-04-primary'>Outline Button</div>
+        <VynlButton size='small' kind='outline'>
+          Outline Button S
+        </VynlButton>
 
-<VynlButton size='small' kind='outline'>
-  Outline Button S
-</VynlButton>
+        <VynlButton size='small' kind='outline' loading={true} />
 
-<VynlButton size='small' kind='outline' loading={true} />
+        <VynlButton size='small' kind='outline' disabled={true}>
+          Outline Button S
+        </VynlButton>
 
-<VynlButton size='small' kind='outline' disabled={true}>
-  Outline Button S
-</VynlButton>
+        <VynlButton size='medium' kind='outline'>
+          Outline Button M
+        </VynlButton>
 
-<VynlButton size='medium' kind='outline'>
-  Outline Button M
-</VynlButton>
+        <VynlButton size='medium' kind='outline' loading={true} />
 
-<VynlButton size='medium' kind='outline' loading={true} />
+        <VynlButton size='medium' kind='outline' disabled={true}>
+          Outline Button M
+        </VynlButton>
 
-<VynlButton size='medium' kind='outline' disabled={true}>
-  Outline Button M
-</VynlButton>
+        <VynlButton size='large' kind='outline'>
+          Outline Button L
+        </VynlButton>
 
-<VynlButton size='large' kind='outline'>
-  Outline Button L
-</VynlButton>
+        <VynlButton size='large' kind='outline' loading={true} />
 
-<VynlButton size='large' kind='outline' loading={true} />
+        <VynlButton size='large' kind='outline' disabled={true}>
+          Outline Button L
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ))
 
-<VynlButton size='large' kind='outline' disabled={true}>
-  Outline Button L
-</VynlButton>
-</div></VynlTheming>)
+  .add('Ghost Button', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>Ghost Button</div>
 
-.add('Ghost Button', () => <VynlTheming><div className='page-section'>
-<div className='headline-04-primary'>Ghost Button</div>
+        <VynlButton size='small' kind='ghost'>
+          Ghost Button S
+        </VynlButton>
 
-<VynlButton size='small' kind='ghost'>
-  Ghost Button S
-</VynlButton>
+        <VynlButton size='small' kind='ghost' loading={true}>
+          Ghost Button S
+        </VynlButton>
 
-<VynlButton size='small' kind='ghost' loading={true}>
-  Ghost Button S
-</VynlButton>
+        <VynlButton size='small' kind='ghost' disabled={true}>
+          Ghost Button S
+        </VynlButton>
 
-<VynlButton size='small' kind='ghost' disabled={true}>
-  Ghost Button S
-</VynlButton>
+        <VynlButton size='medium' kind='ghost'>
+          Ghost Button M
+        </VynlButton>
 
-<VynlButton size='medium' kind='ghost'>
-  Ghost Button M
-</VynlButton>
+        <VynlButton size='medium' kind='ghost' loading={true}>
+          Ghost Button M
+        </VynlButton>
 
-<VynlButton size='medium' kind='ghost' loading={true}>
-  Ghost Button M
-</VynlButton>
+        <VynlButton size='medium' kind='ghost' disabled={true}>
+          Ghost Button M
+        </VynlButton>
 
-<VynlButton size='medium' kind='ghost' disabled={true}>
-  Ghost Button M
-</VynlButton>
+        <VynlButton size='large' kind='ghost'>
+          Ghost Button L
+        </VynlButton>
 
-<VynlButton size='large' kind='ghost'>
-  Ghost Button L
-</VynlButton>
+        <VynlButton size='large' kind='ghost' loading={true}>
+          Ghost Button L
+        </VynlButton>
 
-<VynlButton size='large' kind='ghost' loading={true}>
-  Ghost Button L
-</VynlButton>
+        <VynlButton size='large' kind='ghost' disabled={true}>
+          Ghost Button L
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ))
 
-<VynlButton size='large' kind='ghost' disabled={true}>
-  Ghost Button L
-</VynlButton>
-</div></VynlTheming>)
+  .add('Button with Icn and Label', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>Button with Icon and Label</div>
 
-.add('Button with Icn and Label', () => <VynlTheming><div className='page-section'>
-<div className='headline-04-primary'>Button with Icon and Label</div>
+        <VynlButton size='small' kind='withicon'>
+          <div className='iconwrappers'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrappers'>With Icon S</div>
+        </VynlButton>
 
-<VynlButton size='small' kind='withicon'>
-  <div className='iconwrappers'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrappers'>With Icon S</div>
-</VynlButton>
+        <VynlButton size='small' kind='withicon' loading={true}>
+          <div className='iconwrappers'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrappers'>With Icon S</div>
+        </VynlButton>
 
-<VynlButton size='small' kind='withicon' loading={true}>
-  <div className='iconwrappers'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrappers'>With Icon S</div>
-</VynlButton>
+        <VynlButton size='small' kind='withicon' disabled={true}>
+          <div className='iconwrappers'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrappers'>With Icon S</div>
+        </VynlButton>
 
-<VynlButton size='small' kind='withicon' disabled={true}>
-  <div className='iconwrappers'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrappers'>With Icon S</div>
-</VynlButton>
+        <VynlButton size='medium' kind='withicon'>
+          <div className='iconwrapperm'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperm'>With Icon M</div>
+        </VynlButton>
 
-<VynlButton size='medium' kind='withicon'>
-  <div className='iconwrapperm'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperm'>With Icon M</div>
-</VynlButton>
+        <VynlButton size='medium' kind='withicon' loading={true}>
+          <div className='iconwrapperm'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperm'>With Icon M</div>
+        </VynlButton>
 
-<VynlButton size='medium' kind='withicon' loading={true}>
-  <div className='iconwrapperm'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperm'>With Icon M</div>
-</VynlButton>
+        <VynlButton size='medium' kind='withicon' disabled={true}>
+          <div className='iconwrapperm'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperm'>With Icon M</div>
+        </VynlButton>
 
-<VynlButton size='medium' kind='withicon' disabled={true}>
-  <div className='iconwrapperm'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperm'>With Icon M</div>
-</VynlButton>
+        <VynlButton size='large' kind='withicon'>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperl'>With Icon L</div>
+        </VynlButton>
 
-<VynlButton size='large' kind='withicon'>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperl'>With Icon L</div>
-</VynlButton>
+        <VynlButton size='large' kind='withicon' loading={true}>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperl'>With Icon L</div>
+        </VynlButton>
 
-<VynlButton size='large' kind='withicon' loading={true}>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperl'>With Icon L</div>
-</VynlButton>
+        <VynlButton size='large' kind='withicon' disabled={true}>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+          <div className='labelwrapperl'>With Icon L</div>
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ))
 
-<VynlButton size='large' kind='withicon' disabled={true}>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-  <div className='labelwrapperl'>With Icon L</div>
-</VynlButton>
-</div>)
+  .add('FAB', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>FAB</div>
 
-.add('FAB', () =>  <div className='page-section'>
-<div className='headline-04-primary'>FAB</div>
+        <VynlButton size='large' kind='fab'>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+        </VynlButton>
 
-<VynlButton size='large' kind='fab'>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-</VynlButton>
+        <VynlButton size='large' kind='fab' disabled={true}>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ))
 
-<VynlButton size='large' kind='fab' disabled={true}>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-</VynlButton>
-</div></VynlTheming>)
+  .add('Button with Only Icon', () => (
+    <VynlTheming>
+      <div className='page-section'>
+        <div className='headline-04-primary'>Button with Only Icon</div>
 
-.add('Button with Only Icon', () => <VynlTheming><div className='page-section'>
-<div className='headline-04-primary'>Button with Only Icon</div>
+        <VynlButton size='large' kind='onlyicon'>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+        </VynlButton>
 
-<VynlButton size='large' kind='onlyicon'>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-</VynlButton>
-
-<VynlButton size='large' kind='onlyicon' disabled={true}>
-  <div className='iconwrapperl'>
-    <FontAwesomeIcon icon='heart' />
-  </div>
-</VynlButton>
-</div></VynlTheming>)
-
+        <VynlButton size='large' kind='onlyicon' disabled={true}>
+          <div className='iconwrapperl'>
+            <FontAwesomeIcon icon='heart' />
+          </div>
+        </VynlButton>
+      </div>
+    </VynlTheming>
+  ));
