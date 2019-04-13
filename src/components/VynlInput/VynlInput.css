@@ -1,67 +1,43 @@
-.vynl-input-wrapper {
+.vynl-input{
   width: 100%;
   min-width: 192px;
   max-width: 300px;
   height: 48px;
-  border-radius: 3px;
-  border: 1px solid var(--color-primary-70);
+  border-radius: 6px;
+  border: 1px solid var(--color-primary-30);
   background: #fff;
-  position: relative;
-}
-
-.vynl-input-wrapper.focus {
-  border: 1px solid var(--color-primary-70);
-}
-
-
-
-.vynl-input-wrapper .vynl-label {
-  position: absolute;
-  top: -26px;
-  left: 0;
-  transition: all linear 200ms;
-}
-
-.vynl-input-wrapper.disabled {
-  background: var(--color-primary-20);
-  color: var(--text-02);
-}
-
-.vynl-input-wrapper .vynl-input input::placeholder {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 24px;
-  color: var(--text-02);
-}
-
-.vynl-input-wrapper .vynl-label.placeholder {
-  color: var(--text-02);
-  background: transparent;
-  padding: 0;
-  font-size: var(--font-size-s);
-  font-weight: normal;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-}
-
-
-
-.vynl-input {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  position: absolute;
+  overflow: hidden;
+  color: var(--color-primary-70);
+}
+
+.vynl-input.focus {
+  border: 1px solid var(--color-primary-70);
+}
+
+.vynl-input.filled {
+  background: var(--color-primary-20);
+}
+
+.vynl-input.disabled {
+  background: var(--color-grey-50);
+  color: var(--color-grey-70);
+}
+
+.vynl-input input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: var(--color-primary-70-40);
 }
 
 .vynl-input input {
   flex-grow: 1;
   height: 100%;
   background: transparent;
-  color: var(--color-grey-100);
+  color: var(--color-primary-70);
   font-size: var(--font-size-s);
   font-weight: normal;
   border: 0;
@@ -71,68 +47,21 @@
   box-sizing: border-box;
 }
 
-
-.vynl-input .icon-wrapper {
+.vynl-input .prefix,
+.vynl-input .suffix {
+  min-width: 40px;
+  height: 40px;
+  color: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  color: var(--color-primary-70);
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+input.withPrefix {
+  padding-left: 0px;
 }
 
-
-.vynl-input .icon-wrapper.loading {
-  color: var(--color-primary-70);
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
-  animation: rotating 2s linear infinite;
+input.withSuffix {
+  padding-right: 0px;
 }
 
-
-.vynl-input .icon-wrapper .vynl-button.onlyicon {
-  width: 48px;
-  height: 48px;
-}
-
-.vynl-input .icon-wrapper .vynl-button.onlyicon:hover,
-.vynl-input .icon-wrapper .vynl-button.onlyicon:active,
-.vynl-input .icon-wrapper .vynl-button.onlyicon:focus {
-  background: transparent;
-}
-
-.vynl-input .icon-wrapper .vynl-button.onlyicon:active,
-.vynl-input .icon-wrapper .vynl-button.onlyicon:focus {
-  color: var(--color-primary-70);
-}

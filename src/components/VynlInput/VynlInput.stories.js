@@ -4,13 +4,25 @@ import { storiesOf } from '@storybook/react';
 import { VynlInput } from './VynlInput';
 import { FormField } from '../FormField/FormField';
 import { VynlTextArea } from '../VynlTextArea/VynlTextArea';
+import {VynlTheming} from '../VynlTheming/VynlTheming';
+import { VynlHint } from '../VynlHint/VynlHint';
+import { VynlError } from '../VynlError/VynlError';
+import {VynlLabel} from '../VynlLabel/VynlLabel';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 
 storiesOf('VynlInput', module)
   .add('Input Default', () => (
+    <VynlTheming>
     <div className='page-section'>
       <div className='headline-input'>Input Default</div>
-
-      <FormField>
+      <FormField hasError = {true}>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
+       
         <VynlInput
           type='text'
           placeholder='email address'
@@ -18,6 +30,7 @@ storiesOf('VynlInput', module)
           autoComplete=''
           name='email'
         />
+         <VynlError>This is an error message!</VynlError>
       </FormField>
 
       <FormField>
@@ -29,62 +42,47 @@ storiesOf('VynlInput', module)
           name='password'
         />
       </FormField>
-    </div>
-  ))
-
-  .add('Input with Multi Label', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Input with Multi Label</div>
 
       <FormField>
         <VynlInput
-          type='text'
-          placeholder='email address'
-          autoFocus=''
-          autoComplete=''
-          name='email'
+        type='text'
+        placeholder='password'
+        autoFocus=''
+        autoComplete=''
+        name='email'
+        disabled={true}
         />
       </FormField>
 
-      <FormField>
-        <VynlInput
-          type='password'
-          placeholder='password'
-          autoFocus=''
-          autoComplete=''
-          name='password'
-        />
-      </FormField>
-    </div>
-  ))
+</div>
+</VynlTheming>))
 
-  .add('Input Disabled', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Input Disabled</div>
+.add('Input with Icon', () => (
+  <VynlTheming>
+  <div className='page-section'>
+    <div className='headline-input'>Input with Icon</div>
+    <FormField hasError = {true}>
+      <VynlLabel>Label</VynlLabel>
+      <VynlHint>Optional</VynlHint>
+     
+      <VynlInput
+        type='text'
+        placeholder='email address'
+        autoFocus=''
+        autoComplete=''
+        name='email'>
+        <FontAwesomeIcon icon='heart'/>
+        <FontAwesomeIcon icon='heart'/>
+        </VynlInput>
 
-      <FormField>
-        <VynlInput
-          type='text'
-          placeholder='password'
-          autoFocus=''
-          autoComplete=''
-          name='email'
-          disabled={true}
-        />
-      </FormField>
-    </div>
-  ))
+       <VynlError>This is an error message!</VynlError>
+    </FormField>
 
-  .add('Input Loading', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Input Loading</div>
-      <FormField>
-        <VynlInput loading={true} />
-      </FormField>
-    </div>
-  ))
+  </div>
+  </VynlTheming>))
 
-  .add('Text Area', () => (
+
+  /*.add('Text Area', () => (
     <div className='page-section'>
       <div className='headline-input'>Text Area Default</div>
 
@@ -117,4 +115,4 @@ storiesOf('VynlInput', module)
         />
       </FormField>
     </div>
-  ));
+  )); */

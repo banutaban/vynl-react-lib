@@ -1,12 +1,5 @@
 import './VynlInput.css';
 import React, { Component } from 'react';
-import { VynlLabel } from '../VynlLabel/VynlLabel';
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-library.add(faSpinner);
-
 
 
 export class VynlInput extends Component {
@@ -42,66 +35,45 @@ export class VynlInput extends Component {
     return !this.state.focus && this.state.value === '' ? 'placeholder' : '';
   }
 
-  renderLabel(placeholder, externalLabel) {
-    if(placeholder && placeholder !== '') {
-    if (!externalLabel) {
-       return (
-          <VynlLabel className={this.generateLabelClassName()}>
-              {placeholder}
-          </VynlLabel>
-          );
-      }
-    }
-}
 
   generateClassname(disabled) {
-    const classNamearray=["vynl-input-wrapper"]
+    const classNamearray=["vynl-input"]
     if (this.state.focus) {
       classNamearray.push("focus");
+    }
+    if (this.state.value !== '') {
+      classNamearray.push("filled");
     }
     if (disabled) {classNamearray.push("disabled")};
     return classNamearray.join(' ');
     
   }
 
-  renderIcon (loading, children) {
-    if (loading) {
-      return <div className='icon-wrapper loading'><FontAwesomeIcon icon='spinner'></FontAwesomeIcon></div>;
-    } else if (children) {
-      return <div className='icon-wrapper'>{children}</div>;
-    }
-  }
-
   render() {
     let {
       children,
-      placeholder,
       disabled,
       onFocus,
       onBlur,
       onChange,
-      externalLabel,
-      loading,
       ...props
     } = this.props;
-    
-    const inlinePlaceholder = externalLabel ? placeholder : undefined
-    disabled = loading ? true : disabled
+
+    const [first, second] = React.Children.toArray(children);
+    const inputClassName = `${first && 'withPrefix'} ${second && 'withSuffix'}`;
 
     return (
       <div className={this.generateClassname(disabled)}>
-        {this.renderLabel(placeholder, externalLabel)} 
-        <div className='vynl-input'>
+        {first && <div className="prefix">{first}</div>}
           <input
-            placeholder={inlinePlaceholder}
             {...props}
+            className={inputClassName}
             onChange={(e) => this.handleOnChange(e, onChange)}
             onFocus={(e) => this.handleFocus(e, onFocus)}
             onBlur = {(e)=>this.handleBlur(e, onBlur)}
             disabled={disabled}
-          />
-         {this.renderIcon(loading,children)}
-        </div>
+            />
+        {second && <div className="suffix">{second}</div>}
       </div>
     );
   }
