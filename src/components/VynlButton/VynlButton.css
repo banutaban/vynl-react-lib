@@ -46,6 +46,21 @@
   pointer-events: none;
 }
 
+.vynl-button svg{
+  width: 20px;
+  height: 20px;
+}
+
+.vynl-button.large svg{
+  width: 24px;
+  height: 24px;
+}
+
+.vynl-button.small svg{
+  width: 14px;
+  height: 14px;
+}
+
 /* OUTLINE BUTTON */
 
 .vynl-button.outline {
@@ -56,13 +71,12 @@
 }
 
 .vynl-button.outline:hover {
-  background: var(--color-primary-60);
-
+  background: var(--color-primary-70-40);
 }
 
 .vynl-button.outline:active,
 .vynl-button.outline:focus {
-  background: var(--color-primary-50);
+  background: var(--color-primary-70-20);
 }
 
 .vynl-button.outline:disabled {
@@ -101,6 +115,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .heart {
@@ -177,86 +192,72 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding:0;
 }
 
-.vynl-button.fab .iconwrapperl {
-  width: 100%;
-  height: 100%;
+.vynl-button.fab .ripple-effect-container {
+  border-radius: 100%;
 }
 
 /* BUTTON WITH ONLY ICON */
 
 .vynl-button.onlyicon {
-  background: transparent;
-  box-shadow: none;
-  color: var(--color-primary-70);
-}
-
-.vynl-button.onlyicon .iconwrapperl {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.vynl-button.onlyicon .iconwrapperm {
-  width: 32px;
+  min-width: 32px;
+  max-width: 32px;
   height: 32px;
   border-radius: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-shadow: none;
+  background: transparent;
+  color: var(--color-primary-70);
+  padding: 0;
+}
+
+.vynl-button.onlyicon .ripple-effect-container {
+  border-radius: 100%;
 }
 
 
-.vynl-button.onlyicon .iconwrappers {
-  width: 24px;
+.vynl-button.onlyicon.large {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+
+.vynl-button.onlyicon.small {
+  min-width: 24px;
+  max-width: 24px;
   height: 24px;
   border-radius: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.vynl-button.onlyicon .iconwrapperl:hover {
-  background: var(--color-primary-60);
-  color: var(--color-grey-40);
+.vynl-button.onlyicon:hover {
+  background: var(--color-primary-70-40);
 }
 
-.vynl-button.onlyicon .iconwrapperl:active,
-.vynl-button.onlyicon .iconwrapperl:focus {
-  background: var(--color-primary-50);
-  color: var(--color-grey-40);
-}
-
-.vynl-button.onlyicon .iconwrapperm:hover {
-  background: var(--color-primary-60);
-  color: var(--color-grey-40);
-}
-
-.vynl-button.onlyicon .iconwrapperm:active,
-.vynl-button.onlyicon .iconwrapperm:focus {
-  background: var(--color-primary-50);
-  color: var(--color-grey-40);
-}
-
-.vynl-button.onlyicon .iconwrappers:hover {
-  background: var(--color-primary-60);
-  color: var(--color-grey-40);
-}
-
-.vynl-button.onlyicon .iconwrappers:active,
-.vynl-button.onlyicon .iconwrappers:focus {
-  background: var(--color-primary-50);
-  color: var(--color-grey-40);
+.vynl-button.onlyicon:active {
+  background: var(--color-primary-70-20);
 }
 
 .vynl-button.onlyicon:disabled {
-  color: var(--color-grey-30);
+  background: var(--color-grey-30);
+  color: var(--color-grey-40);
 }
+
+
+/* ONLY ICON + LABEL*/
+
+.vynl-button.vynl-button.onlyicon .labelwrapper {
+
+  position:absolute;
+  top: 100%;
+  font-size: 10px;
+}
+
 
 /* SPINNER*/
 
