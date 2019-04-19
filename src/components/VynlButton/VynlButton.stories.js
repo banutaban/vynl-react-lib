@@ -3,6 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { VynlButton } from './VynlButton';
 import { VynlTheming } from '../VynlTheming/VynlTheming';
+import { VnylContainer } from '../VnylContainer/VnylContainer';
 
 /* ICONS */
 
@@ -19,7 +20,7 @@ library.add(faHeart);
 storiesOf('VynlButton', module)
   .add('Contained Button', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Contained Button</div>
 
         <VynlButton size='small'>Small Button</VynlButton>
@@ -45,7 +46,7 @@ storiesOf('VynlButton', module)
         <VynlButton size='large' disabled={true}>
           Large Button
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -53,7 +54,7 @@ storiesOf('VynlButton', module)
 
   .add('Outline Button', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Outline Button</div>
 
         <VynlButton size='small' kind='outline'>
@@ -85,7 +86,7 @@ storiesOf('VynlButton', module)
         <VynlButton size='large' kind='outline' disabled={true}>
           Outline Button L
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -93,7 +94,7 @@ storiesOf('VynlButton', module)
 
   .add('Ghost Button', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Ghost Button</div>
 
         <VynlButton size='small' kind='ghost'>
@@ -131,7 +132,7 @@ storiesOf('VynlButton', module)
         <VynlButton size='large' kind='ghost' disabled={true}>
           Ghost Button L
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -139,7 +140,7 @@ storiesOf('VynlButton', module)
 
   .add('Icon and Label L', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Button with Icon and Label</div>
 
         <VynlButton size='small' kind='withicon'>
@@ -204,7 +205,7 @@ storiesOf('VynlButton', module)
           </div>
           <div className='labelwrapperl'>With Icon L</div>
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -212,7 +213,7 @@ storiesOf('VynlButton', module)
 
   .add('Icon and Label R', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Button with Icon and Label</div>
 
         <VynlButton size='small' kind='withicon'>
@@ -277,7 +278,7 @@ storiesOf('VynlButton', module)
             <FontAwesomeIcon icon='heart' />
           </div>
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -285,18 +286,17 @@ storiesOf('VynlButton', module)
 
   .add('FAB', () => (
     <VynlTheming>
-      {' '}
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>FAB</div>
 
         <VynlButton size='large' kind='fab'>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='fab' disabled={true}>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -304,33 +304,33 @@ storiesOf('VynlButton', module)
 
   .add('Only Icon', () => (
     <VynlTheming>
-      <div className='page-section'>
+      <VnylContainer>
         <div className='headline-04-primary'>Button with Only Icon</div>
 
         <VynlButton size='small' kind='onlyicon'>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='small' kind='onlyicon' disabled={true}>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='medium' kind='onlyicon'>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='medium' kind='onlyicon' disabled={true}>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='onlyicon'>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='onlyicon' disabled={true}>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ))
 
@@ -338,20 +338,18 @@ storiesOf('VynlButton', module)
 
   .add('Only Icon and Label', () => (
     <VynlTheming>
-      <div className='page-section'>
-        <div className='headline-04-primary'>
-          Button with Only Icon and Label
-        </div>
+      <VnylContainer>
+        <div className='headline-04-primary'>Button with Only Icon and Label</div>
 
         <VynlButton size='medium' kind='onlyicon'>
-            <FontAwesomeIcon icon='heart' />
+          <FontAwesomeIcon icon='heart' />
           <div className='labelwrapper'>Button</div>
         </VynlButton>
 
         <VynlButton size='medium' kind='onlyicon' disabled={true}>
-            <FontAwesomeIcon icon='heart' />
-            <div className='labelwrapper'>Button</div>
+          <FontAwesomeIcon icon='heart' />
+          <div className='labelwrapper'>Button</div>
         </VynlButton>
-      </div>
+      </VnylContainer>
     </VynlTheming>
   ));

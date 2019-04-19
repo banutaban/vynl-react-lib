@@ -1,82 +1,62 @@
+import React, { useState } from 'react';
 import './VynlInput.css';
-import React, { Component } from 'react';
 
+export const VynlInput = ({ children, disabled, onFocus, onBlur, onChange, ...props }) => {
+  const [first, second] = React.Children.toArray(children);
+  const inputClassName = `${first && 'withPrefix'} ${second && 'withSuffix'}`;
 
-export class VynlInput extends Component {
-  constructor() {
-    super();
-    this.state = { focus: false, value: ''};
-  }
+  const [focus, setFocus] = useState(false);
+  const [value, setValue] = useState('');
 
-  handleFocus = (e, onFocus) => {
-    if(onFocus) {
-      onFocus(e)
+  const handleFocus = (e, onFocus) => {
+    if (onFocus) {
+      onFocus(e);
     }
 
-    this.setState({ focus: true });
-  }
+    setFocus(true);
+  };
 
-  handleBlur = (e, onBlur) => {
+  const handleBlur = (e, onBlur) => {
     if (onBlur) {
-      onBlur(e)
+      onBlur(e);
     }
 
-    this.setState({ focus: false });
-  }
+    setFocus(false);
+  };
 
-  handleOnChange = (e, onChange) => {
-    if(onChange) {
-      onChange(e)
+  const handleOnChange = (e, onChange) => {
+    if (onChange) {
+      onChange(e);
     }
-    this.setState({ value: e.target.value });
-  }
+    setValue(e.target.value);
+  };
 
-  generateLabelClassName() {
-    return !this.state.focus && this.state.value === '' ? 'placeholder' : '';
-  }
-
-
-  generateClassname(disabled) {
-    const classNamearray=["vynl-input"]
-    if (this.state.focus) {
-      classNamearray.push("focus");
+  const generateClassname = disabled => {
+    const classNames = ['vynl-input'];
+    if (focus) {
+      classNames.push('focus');
     }
-    if (this.state.value !== '') {
-      classNamearray.push("filled");
+    if (value !== '') {
+      classNames.push('filled');
     }
-    if (disabled) {classNamearray.push("disabled")};
-    return classNamearray.join(' ');
-    
-  }
+    if (disabled) {
+      classNames.push('disabled');
+    }
+    return classNames.join(' ');
+  };
 
-  render() {
-    let {
-      children,
-      disabled,
-      onFocus,
-      onBlur,
-      onChange,
-      ...props
-    } = this.props;
-
-    const [first, second] = React.Children.toArray(children);
-    const inputClassName = `${first && 'withPrefix'} ${second && 'withSuffix'}`;
-
-    return (
-      <div className={this.generateClassname(disabled)}>
-        {first && <div className="prefix">{first}</div>}
-          <input
-            {...props}
-            className={inputClassName}
-            onChange={(e) => this.handleOnChange(e, onChange)}
-            onFocus={(e) => this.handleFocus(e, onFocus)}
-            onBlur = {(e)=>this.handleBlur(e, onBlur)}
-            disabled={disabled}
-            />
-        {second && <div className="suffix">{second}</div>}
-      </div>
-    );
-  }
-}
-
-
+  return (
+    <div className={generateClassname(disabled)}>
+      {first && <div className='prefix'>{first}</div>}
+      <input
+        {...props}
+        className={inputClassName}
+        onChange={e => handleOnChange(e, onChange)}
+        onFocus={e => handleFocus(e, onFocus)}
+        onBlur={e => handleBlur(e, onBlur)}
+        disabled={disabled}
+      />
+      {second && <div className='suffix'>{second}</div>}
+    </div>
+  );
+};
