@@ -1,83 +1,74 @@
-import React, { Component, Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import './Ripple.css';
 
-export class Ripple extends Component {
-  constructor() {
-    super();
-    this.state = {
-      animating: false,
-      x: 0,
-      y: 0,
-      size: 0,
-    };
-  }
+export const Ripple = ({ children }) => {
+  const initialOpacity = 0.1;
+  let timer;
+  const [animating, setAnimating] = useState(false);
+  const [left, setLeft] = useState(0);
+  const [top, setTop] = useState(0);
+  const [size, setSize] = useState(0);
+  const [opacity, setOpacity] = useState(initialOpacity);
 
-  handleOnPointerUp = e => {
+  const handleOnPointerUp = e => {
     e.persist();
     const box = e.target.getBoundingClientRect();
-    this.resetPosition(e.clientX - box.x, e.clientY - box.y);
+    resetPosition(e.clientX - box.x, e.clientY - box.y);
     setTimeout(() => {
-      this.setState({
-        animating: true,
-      });
+      setAnimating(true);
     }, 10);
     setTimeout(() => {
-      this.setState({
-        size: 2 * Math.max(box.width, box.height),
-        opacity: 0,
-      });
+      setSize(2 * Math.max(box.width, box.height));
+      setOpacity(0);
     }, 20);
-    if (this.timer) {
-      clearTimeout(this.timer);
+    if (timer) {
+      clearTimeout(timer);
     }
-    this.timer = setTimeout(() => {
-      this.resetPosition(0, 0);
+    timer = setTimeout(() => {
+      resetPosition(0, 0);
     }, 700);
   };
 
-  resetPosition(x, y) {
-    this.setState({
-      x,
-      y,
-      size: 0,
-      opacity: 1,
-      animating: false,
-    });
-  }
+  const resetPosition = (x, y) => {
+    setLeft(x);
+    setTop(y);
+    setSize(0);
+    setOpacity(initialOpacity);
+    setAnimating(false);
+  };
 
-  getChildClassName(childClassName) {
-    const cName = (childClassName && childClassName.split(' ')) || [];
-    cName.push('ripple-target');
-    return cName.join(' ');
-  }
+  const getChildClassName = childClassName => {
+    const classNames = (childClassName && childClassName.split(' ')) || [];
+    classNames.push('ripple-target');
+    return classNames.join(' ');
+  };
 
-  render() {
-    const child = React.Children.only(this.props.children);
-    return React.cloneElement(
-      child,
-      {
-        ...child.props,
-        className: this.getChildClassName(child.props.className),
-        onPointerUp: e => {
-          child.props.onPointerUp && child.props.onPointerUp(e);
-          this.handleOnPointerUp(e);
-        },
+  const child = React.Children.only(children);
+
+  return React.cloneElement(
+    child,
+    {
+      ...child.props,
+      className: getChildClassName(child.props.className),
+      onPointerUp: e => {
+        child.props.onPointerUp && child.props.onPointerUp(e);
+        handleOnPointerUp(e);
       },
-      <Fragment>
-        <div className='ripple-effect-container'>
-          <div
-            className={this.state.animating ? 'ripple-effect animating': 'ripple-effect'}
-            style={{
-              top: this.state.y,
-              left: this.state.x,
-              width: this.state.size,
-              height: this.state.size,
-              opacity: this.state.opacity
-            }}
-          />
-        </div>
-        {child.props.children}
-      </Fragment>
-    );
-  }
-}
+    },
+    <Fragment>
+      <div className='ripple-effect-container'>
+        <div
+          className={animating ? 'ripple-effect animating' : 'ripple-effect'}
+          style={{
+            top,
+            left,
+            width: size,
+            height: size,
+            opacity,
+          }}
+        />
+      </div>
+      {child.props.children}
+    </Fragment>,
+  );
+};

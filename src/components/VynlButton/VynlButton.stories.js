@@ -7,6 +7,7 @@ import { VynlContainer } from '../VynlContainer/VynlContainer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { VynlCell, VynlGrid } from '../VynlGrid/VynlGrid';
 
 /* ICONS */
 
@@ -21,30 +22,43 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Contained Button</div>
+        <VynlGrid>
+          <VynlCell span={4}>
+            <VynlButton size='small'>Small Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' disabled={true}>
+              Small Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small'>Small Button</VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='medium'>Medium Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' disabled={true}>
+              Medium Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small' loading={true} />
-
-        <VynlButton size='small' disabled={true}>
-          Small Button
-        </VynlButton>
-
-        <VynlButton size='medium'>Medium Button</VynlButton>
-
-        <VynlButton size='medium' loading={true} />
-
-        <VynlButton size='medium' disabled={true}>
-          Medium Button
-        </VynlButton>
-
-        <VynlButton size='large'>Large Button</VynlButton>
-
-        <VynlButton size='large' loading={true} />
-
-        <VynlButton size='large' disabled={true}>
-          Large Button
-        </VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='large'>Large Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' disabled={true}>
+              Large Button
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -55,36 +69,43 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Outline Button</div>
+        <VynlGrid>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='outline'>Small Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='outline' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='outline' disabled={true}>
+              Small Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small' kind='outline'>
-          Outline Button S
-        </VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='outline'>Medium Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='outline' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='outline' disabled={true}>
+              Medium Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small' kind='outline' loading={true} />
-
-        <VynlButton size='small' kind='outline' disabled={true}>
-          Outline Button S
-        </VynlButton>
-
-        <VynlButton size='medium' kind='outline'>
-          Outline Button M
-        </VynlButton>
-
-        <VynlButton size='medium' kind='outline' loading={true} />
-
-        <VynlButton size='medium' kind='outline' disabled={true}>
-          Outline Button M
-        </VynlButton>
-
-        <VynlButton size='large' kind='outline'>
-          Outline Button L
-        </VynlButton>
-
-        <VynlButton size='large' kind='outline' loading={true} />
-
-        <VynlButton size='large' kind='outline' disabled={true}>
-          Outline Button L
-        </VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='outline'>Large Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='outline' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='outline' disabled={true}>
+              Large Button
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -95,42 +116,43 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Ghost Button</div>
+        <VynlGrid>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='ghost'>Small Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='ghost' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='ghost' disabled={true}>
+              Small Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small' kind='ghost'>
-          Ghost Button S
-        </VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='ghost'>Medium Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='ghost' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='ghost' disabled={true}>
+              Medium Button
+            </VynlButton>
+          </VynlCell>
 
-        <VynlButton size='small' kind='ghost' loading={true}>
-          Ghost Button S
-        </VynlButton>
-
-        <VynlButton size='small' kind='ghost' disabled={true}>
-          Ghost Button S
-        </VynlButton>
-
-        <VynlButton size='medium' kind='ghost'>
-          Ghost Button M
-        </VynlButton>
-
-        <VynlButton size='medium' kind='ghost' loading={true}>
-          Ghost Button M
-        </VynlButton>
-
-        <VynlButton size='medium' kind='ghost' disabled={true}>
-          Ghost Button M
-        </VynlButton>
-
-        <VynlButton size='large' kind='ghost'>
-          Ghost Button L
-        </VynlButton>
-
-        <VynlButton size='large' kind='ghost' loading={true}>
-          Ghost Button L
-        </VynlButton>
-
-        <VynlButton size='large' kind='ghost' disabled={true}>
-          Ghost Button L
-        </VynlButton>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='ghost'>Large Button</VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='ghost' loading={true} />
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='ghost' disabled={true}>
+              Large Button
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
