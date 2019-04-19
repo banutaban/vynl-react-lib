@@ -8,6 +8,7 @@ import { VynlHint } from '../VynlHint/VynlHint';
 import { VynlError } from '../VynlError/VynlError';
 import { VynlLabel } from '../VynlLabel/VynlLabel';
 import { VynlContainer } from '../VynlContainer/VynlContainer';
+import '../font.css';
 
 storiesOf('VynlTextArea', module)
   .add('TextArea Default', () => (

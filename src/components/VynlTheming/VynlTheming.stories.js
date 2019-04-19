@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../font.css';
 import { storiesOf } from '@storybook/react';
 import { VynlButton } from '../VynlButton/VynlButton';
 import { VynlTheming } from './VynlTheming';
