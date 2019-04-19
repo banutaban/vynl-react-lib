@@ -15,6 +15,20 @@ storiesOf('VynlInput', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-input'>Input Default</div>
+        <FormField>
+          <VynlLabel>Label</VynlLabel>
+          <VynlHint>Optional</VynlHint>
+
+          <VynlInput
+            type='text'
+            placeholder='email address'
+            autoFocus=''
+            autoComplete=''
+            name='email'
+          />
+          <VynlError>This is an error message!</VynlError>
+        </FormField>
+
         <FormField hasError={true}>
           <VynlLabel>Label</VynlLabel>
           <VynlHint>Optional</VynlHint>

@@ -1,16 +1,17 @@
 import React from 'react';
 import './FormField.css';
 
-export const FormField = ({ children, hasError }) => {
+export const FormField = ({ children, hasError = false }) => {
   let input, label, hint, error, link;
 
-  React.Children.forEach(children, (child, index) => {
+  React.Children.forEach(children, child => {
     switch (child.type.name) {
+      case 'VynlTextArea':
       case 'VynlInput':
-        input = React.cloneElement(child);
+        input = React.cloneElement(child, {hasError});
         break;
       case 'VynlLabel':
-        label = React.cloneElement(child);
+        label = React.cloneElement(child, {type: hasError ? 'danger': ''});
         break;
       case 'VynlHint':
         hint = React.cloneElement(child);

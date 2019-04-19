@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import './VynlInput.css';
 
-export const VynlInput = ({ children, disabled, onFocus, onBlur, onChange, ...props }) => {
+export const VynlInput = ({
+  children,
+  disabled,
+  onFocus,
+  onBlur,
+  onChange,
+  hasError = false,
+  ...props
+}) => {
   const [first, second] = React.Children.toArray(children);
   const inputClassName = `${first && 'withPrefix'} ${second && 'withSuffix'}`;
 
@@ -38,6 +46,9 @@ export const VynlInput = ({ children, disabled, onFocus, onBlur, onChange, ...pr
     }
     if (value !== '') {
       classNames.push('filled');
+    }
+    if (hasError) {
+      classNames.push('error');
     }
     if (disabled) {
       classNames.push('disabled');

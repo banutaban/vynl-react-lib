@@ -22,6 +22,16 @@
   color: var(--text-color-primary-20);
 }
 
+.vynl-input.error {
+  background: var(--color-danger-20);
+  border: 1px solid var(--text-color-danger-20);
+  color: var(--text-color-danger-20);
+}
+
+.vynl-input.error input::placeholder {
+  color: var(--text-color-danger-20-40);
+}
+
 .vynl-input.disabled {
   background: var(--color-grey-20);
   color: var(--text-color-grey-20-40);
@@ -43,7 +53,7 @@
   flex-grow: 1;
   height: 100%;
   background: transparent;
-  color: var(--text-color-primary-10);
+  color: currentColor;
   font-size: var(--font-size-s);
   font-weight: normal;
   border: 0;

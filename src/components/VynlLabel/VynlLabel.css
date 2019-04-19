@@ -1,6 +1,34 @@
 .vynl-label {
-  color: var(--color-primary-50);
+  color: currentColor;
   font-weight: bold;
   font-size: 12px;
   display: inline-block;
+}
+
+.vynl-label.primary {
+  color: var(--color-primary-50);
+}
+
+.vynl-label.secondary {
+  color: var(--color-secondary-50);
+}
+
+.vynl-label.success {
+  color: var(--color-success-50);
+}
+
+.vynl-label.info {
+  color: var(--color-info-50);
+}
+
+.vynl-label.warning {
+  color: var(--color-warning-50);
+}
+
+.vynl-label.danger {
+  color: var(--color-danger-50);
+}
+
+.vynl-label.grey {
+  color: var(--color-grey-50);
 }

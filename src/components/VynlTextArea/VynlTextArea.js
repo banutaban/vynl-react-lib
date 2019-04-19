@@ -2,16 +2,18 @@ import './VynlTextArea.css';
 import React, { useState } from 'react';
 
 export const VynlTextArea = ({
+  value = '',
   children,
   placeholder,
   onFocus,
   onBlur,
   onChange,
   disabled,
+  hasError = false,
   ...props
 }) => {
   const [focus, setFocus] = useState(false);
-  const [value, setValue] = useState('');
+  const [textValue, setTextValue] = useState(value);
 
   const handleFocus = e => {
     onFocus && onFocus(e);
@@ -25,19 +27,36 @@ export const VynlTextArea = ({
 
   const handleOnChange = e => {
     onChange && onChange(e);
-    setValue(e.target.value);
+    setTextValue(e.target.value);
+  };
+
+  const generateClassname = disabled => {
+    const classNames = ['vynl-textarea'];
+    if (focus) {
+      classNames.push('focus');
+    }
+    if (textValue !== '') {
+      classNames.push('filled');
+    }
+    if (hasError) {
+      classNames.push('error');
+    }
+    if (disabled) {
+      classNames.push('disabled');
+    }
+    return classNames.join(' ');
   };
 
   return (
-    <div className={focus ? 'vynl-text-area focus' : 'vynl-text-area'}>
+    <div className={generateClassname(disabled)}>
       <textarea
+        {...props}
         disabled={disabled}
         placeholder={placeholder}
         onChange={handleOnChange}
         onFocus={handleFocus}
-        onBlur={handleBlur}
-        {...props}>
-        {children}
+        onBlur={handleBlur}>
+        {textValue}
       </textarea>
     </div>
   );
