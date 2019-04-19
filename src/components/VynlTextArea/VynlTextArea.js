@@ -1,61 +1,44 @@
 import './VynlTextArea.css';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
+export const VynlTextArea = ({
+  children,
+  placeholder,
+  onFocus,
+  onBlur,
+  onChange,
+  disabled,
+  ...props
+}) => {
+  const [focus, setFocus] = useState(false);
+  const [value, setValue] = useState('');
 
-export class VynlTextArea extends Component {
-    constructor() {
-      super();
-      this.state = { focus: false, value: ''};
-    }
-  
-    handleFocus() {
-      this.setState({ focus: true });
-    }
-    handleBlur() {
-      this.setState({ focus: false });
-    }
+  const handleFocus = e => {
+    onFocus && onFocus(e);
+    setFocus(true);
+  };
 
-    handleOnChange(text) {
-      this.setState({ value: text });
-    }
-    
-    render() {
-      const {
-        children,
-        placeholder,
-        onFocus,
-        onBlur,
-        onChange,
-        disabled,
-        ...props
-      } = this.props;
+  const handleBlur = e => {
+    onBlur && onBlur(e);
+    setFocus(false);
+  };
 
-      return (
-        <div className={this.state.focus ? 'vynl-text-area focus' : 'vynl-text-area'}>
-          <textarea
-          disabled= {disabled}
-          placeholder= {placeholder}
-              onChange={e => {
-                onChange && onChange(e);
-                this.handleOnChange(e.target.value);
-              }}
-              onFocus={e => {
-                onFocus && onFocus(e);
-                this.handleFocus();
-              }}
-              onBlur={e => {
-                onBlur && onBlur(e);
-                this.handleBlur();
-              }} 
-              {...props}
-              >
-              {children}
-          
+  const handleOnChange = e => {
+    onChange && onChange(e);
+    setValue(e.target.value);
+  };
 
-            </textarea>
-           
-          </div>
-      );
-    }
-}
-
+  return (
+    <div className={focus ? 'vynl-text-area focus' : 'vynl-text-area'}>
+      <textarea
+        disabled={disabled}
+        placeholder={placeholder}
+        onChange={handleOnChange}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        {...props}>
+        {children}
+      </textarea>
+    </div>
+  );
+};

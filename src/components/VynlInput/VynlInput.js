@@ -51,9 +51,9 @@ export const VynlInput = ({ children, disabled, onFocus, onBlur, onChange, ...pr
       <input
         {...props}
         className={inputClassName}
-        onChange={e => handleOnChange(e, onChange)}
-        onFocus={e => handleFocus(e, onFocus)}
-        onBlur={e => handleBlur(e, onBlur)}
+        onChange={handleOnChange}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
         disabled={disabled}
       />
       {second && <div className='suffix'>{second}</div>}
