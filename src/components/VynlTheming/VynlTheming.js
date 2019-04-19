@@ -1,6 +1,6 @@
 import React, { Component, createRef } from 'react';
 import { applyTheme } from './VynlThemingUtils';
-import { defaultColorPalette, inversePreset, preset } from './VynlThemingData';
+import { defaultColorPalette, thememingConfig } from './VynlThemingData';
 import './VynlTheming.css';
 
 export class VynlTheming extends Component {
@@ -11,7 +11,7 @@ export class VynlTheming extends Component {
 
   componentDidMount() {
     const { palette = defaultColorPalette, inverse = false } = this.props;
-    applyTheme(this.themingContainerRef, palette, inverse ? inversePreset : preset);
+    applyTheme(this.themingContainerRef, palette, thememingConfig, inverse);
   }
 
   render() {

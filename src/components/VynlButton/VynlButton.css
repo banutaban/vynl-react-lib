@@ -4,7 +4,7 @@
   min-width: 192px;
   height: 48px;
   border-radius: 3px;
-  background: var(--color-primary-70);
+  background: var(--color-primary-50);
   box-shadow: 0 1px 2px 0 rgba(27, 25, 25, 0.25);
   color: #fff;
   font-size: 16px;
@@ -16,14 +16,14 @@
 }
 
 .vynl-button:hover {
-  background: var(--color-primary-60);
+  background: var(--color-primary-40);
   box-shadow: 0 2px 4px 0 rgba(27, 25, 25, 0.4);
   
 }
 
 .vynl-button:active,
 .vynl-button:focus {
-  background: var(--color-primary-50);
+  background: var(--color-primary-30);
 }
 
 .vynl-button.large {
@@ -66,17 +66,17 @@
 .vynl-button.outline {
   background: transparent;
   box-shadow: none;
-  color: var(--color-primary-70);
-  border: 2px solid var(--color-primary-70);
+  color: var(--color-primary-50);
+  border: 2px solid var(--color-primary-50);
 }
 
 .vynl-button.outline:hover {
-  background: var(--color-primary-70-40);
+  background: var(--color-primary-50-40);
 }
 
 .vynl-button.outline:active,
 .vynl-button.outline:focus {
-  background: var(--color-primary-70-20);
+  background: var(--color-primary-50-20);
 }
 
 .vynl-button.outline:disabled {
@@ -89,19 +89,19 @@
 .vynl-button.ghost {
   background: transparent;
   box-shadow: none;
-  color: var(--color-primary-70);
+  color: var(--color-primary-50);
   border: 0;
   outline: 0;
 }
 
 .vynl-button.ghost:hover {
-  background: var(--color-primary-60);
-  color: var(--color-primary-70);
+  background: var(--color-primary-40);
+  color: var(--color-primary-50);
 }
 
 .vynl-button.ghost:active,
 .vynl-button.ghost:focus {
-  background: var(--color-primary-50);
+  background: var(--color-primary-30);
 }
 
 .vynl-button.ghost:disabled {
@@ -119,7 +119,7 @@
 }
 
 .heart {
-  color: var(--color-primary-70);
+  color: var(--color-primary-50);
 }
 
 /* Medium */
@@ -211,7 +211,7 @@
   justify-content: center;
   box-shadow: none;
   background: transparent;
-  color: var(--color-primary-70);
+  color: var(--color-primary-50);
   padding: 0;
 }
 
@@ -236,11 +236,11 @@
 }
 
 .vynl-button.onlyicon:hover {
-  background: var(--color-primary-70-40);
+  background: var(--color-primary-50-40);
 }
 
 .vynl-button.onlyicon:active {
-  background: var(--color-primary-70-20);
+  background: var(--color-primary-50-20);
 }
 
 .vynl-button.onlyicon:disabled {

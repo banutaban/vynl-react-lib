@@ -2,7 +2,7 @@
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  border: 1px solid var(--color-primary-70);
+  border: 1px solid var(--color-primary-50);
   background: var(--color-primary-20);
   outline: 0;
   display: flex;
@@ -15,9 +15,9 @@
 .vynl-checkbox.active {
   width: 20px;
   height: 20px;
-  border: 1px solid var(--color-primary-70);
+  border: 1px solid var(--color-primary-50);
   border-radius: 3px;
-  background: var(--color-primary-70);
+  background: var(--color-primary-50);
 }
 
 .vynl-checkbox.disabled {
