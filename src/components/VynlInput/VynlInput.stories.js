@@ -7,17 +7,13 @@ import { VynlTheming } from '../VynlTheming/VynlTheming';
 import { VynlHint } from '../VynlHint/VynlHint';
 import { VynlError } from '../VynlError/VynlError';
 import { VynlLabel } from '../VynlLabel/VynlLabel';
-import { VnylContainer } from '../VnylContainer/VnylContainer';
-
-
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { VynlContainer } from '../VynlContainer/VynlContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 storiesOf('VynlInput', module)
   .add('Input Default', () => (
     <VynlTheming>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-input'>Input Default</div>
         <FormField hasError={true}>
           <VynlLabel>Label</VynlLabel>
@@ -53,13 +49,13 @@ storiesOf('VynlInput', module)
             disabled={true}
           />
         </FormField>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ))
 
   .add('Input with Icon', () => (
     <VynlTheming>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-input'>Input with Icon</div>
         <FormField hasError={true}>
           <VynlLabel>Label</VynlLabel>
@@ -77,7 +73,7 @@ storiesOf('VynlInput', module)
 
           <VynlError>This is an error message!</VynlError>
         </FormField>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ));
 

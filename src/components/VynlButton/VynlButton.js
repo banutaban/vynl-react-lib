@@ -5,6 +5,7 @@ import { Ripple } from '../Ripple/Ripple';
 import './VynlButton.css';
 
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+
 library.add(faSpinner);
 
 const renderLoading = () => {

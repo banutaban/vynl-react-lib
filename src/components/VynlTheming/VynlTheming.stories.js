@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { VynlButton } from '../VynlButton/VynlButton';
 import { VynlTheming } from './VynlTheming';
-import { VnylContainer } from '../VnylContainer/VnylContainer';
+import { VynlContainer } from '../VynlContainer/VynlContainer';
 
 const documentPalette = {
   primary: '#ff0000',
@@ -18,7 +18,7 @@ const documentPalette = {
 storiesOf('VynlTheming', module)
   .add('Default Theme', () => (
     <VynlTheming>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-04-primary'>Contained Button</div>
 
         <VynlButton size='small'>Small Button</VynlButton>
@@ -44,13 +44,13 @@ storiesOf('VynlTheming', module)
         <VynlButton size='large' disabled={true}>
           Large Button
         </VynlButton>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ))
 
   .add('Default Theme Inversed', () => (
     <VynlTheming inverse={true}>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-04-primary'>Contained Button</div>
 
         <VynlButton size='small'>Small Button</VynlButton>
@@ -76,13 +76,13 @@ storiesOf('VynlTheming', module)
         <VynlButton size='large' disabled={true}>
           Large Button
         </VynlButton>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ))
 
   .add('Overridden Theme', () => (
     <VynlTheming palette={documentPalette}>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-04-primary'>Contained Button</div>
 
         <VynlButton size='small'>Small Button</VynlButton>
@@ -108,13 +108,13 @@ storiesOf('VynlTheming', module)
         <VynlButton size='large' disabled={true}>
           Large Button
         </VynlButton>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ))
 
   .add('Overridden Theme Inversed', () => (
     <VynlTheming palette={documentPalette} inverse={true}>
-      <VnylContainer>
+      <VynlContainer>
         <div className='headline-04-primary'>Contained Button</div>
 
         <VynlButton size='small'>Small Button</VynlButton>
@@ -140,6 +140,6 @@ storiesOf('VynlTheming', module)
         <VynlButton size='large' disabled={true}>
           Large Button
         </VynlButton>
-      </VnylContainer>
+      </VynlContainer>
     </VynlTheming>
   ));
