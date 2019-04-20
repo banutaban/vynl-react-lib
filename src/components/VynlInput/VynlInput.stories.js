@@ -44,6 +44,8 @@ storiesOf('VynlInput', module)
         </FormField>
 
         <FormField>
+        <VynlLabel>Label</VynlLabel>
+          <VynlHint>Optional</VynlHint>
           <VynlInput
             type='password'
             placeholder='password'
@@ -54,6 +56,8 @@ storiesOf('VynlInput', module)
         </FormField>
 
         <FormField>
+        <VynlLabel>Label</VynlLabel>
+          <VynlHint>Optional</VynlHint>
           <VynlInput
             type='text'
             placeholder='password'
