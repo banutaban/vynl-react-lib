@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import './Ripple.css';
 
-export const Ripple = ({ children }) => {
+export const Ripple = ({ children, disabled = false }) => {
   const initialOpacity = 0.1;
   let timer;
   const [animating, setAnimating] = useState(false);
@@ -11,7 +11,9 @@ export const Ripple = ({ children }) => {
   const [opacity, setOpacity] = useState(initialOpacity);
 
   const handleOnPointerUp = e => {
-    e.persist();
+    if (disabled) {
+      return;
+    }
     const box = e.target.getBoundingClientRect();
     resetPosition(e.clientX - box.x, e.clientY - box.y);
     setTimeout(() => {

@@ -64,7 +64,9 @@ storiesOf('VynlButton', module)
         <div className='headline-04-primary'>Outline Button</div>
         <VynlGrid>
           <VynlCell span={4}>
-            <VynlButton size='small' kind='outline'>Small Button</VynlButton>
+            <VynlButton size='small' kind='outline'>
+              Small Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='small' kind='outline' loading={true} />
@@ -76,7 +78,9 @@ storiesOf('VynlButton', module)
           </VynlCell>
 
           <VynlCell span={4}>
-            <VynlButton size='medium' kind='outline'>Medium Button</VynlButton>
+            <VynlButton size='medium' kind='outline'>
+              Medium Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='medium' kind='outline' loading={true} />
@@ -88,7 +92,9 @@ storiesOf('VynlButton', module)
           </VynlCell>
 
           <VynlCell span={4}>
-            <VynlButton size='large' kind='outline'>Large Button</VynlButton>
+            <VynlButton size='large' kind='outline'>
+              Large Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='large' kind='outline' loading={true} />
@@ -111,7 +117,9 @@ storiesOf('VynlButton', module)
         <div className='headline-04-primary'>Ghost Button</div>
         <VynlGrid>
           <VynlCell span={4}>
-            <VynlButton size='small' kind='ghost'>Small Button</VynlButton>
+            <VynlButton size='small' kind='ghost'>
+              Small Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='small' kind='ghost' loading={true} />
@@ -123,7 +131,9 @@ storiesOf('VynlButton', module)
           </VynlCell>
 
           <VynlCell span={4}>
-            <VynlButton size='medium' kind='ghost'>Medium Button</VynlButton>
+            <VynlButton size='medium' kind='ghost'>
+              Medium Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='medium' kind='ghost' loading={true} />
@@ -135,7 +145,9 @@ storiesOf('VynlButton', module)
           </VynlCell>
 
           <VynlCell span={4}>
-            <VynlButton size='large' kind='ghost'>Large Button</VynlButton>
+            <VynlButton size='large' kind='ghost'>
+              Large Button
+            </VynlButton>
           </VynlCell>
           <VynlCell span={4}>
             <VynlButton size='large' kind='ghost' loading={true} />
@@ -158,66 +170,48 @@ storiesOf('VynlButton', module)
         <div className='headline-04-primary'>Button with Icon and Label</div>
 
         <VynlButton size='small' kind='withicon'>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrappers'>With Icon S</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon S
         </VynlButton>
 
         <VynlButton size='small' kind='withicon' loading={true}>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrappers'>With Icon S</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon S
         </VynlButton>
 
         <VynlButton size='small' kind='withicon' disabled={true}>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrappers'>With Icon S</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon S
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon'>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperm'>With Icon M</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon M
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon' loading={true}>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperm'>With Icon M</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon M
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon' disabled={true}>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperm'>With Icon M</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon M
         </VynlButton>
 
         <VynlButton size='large' kind='withicon'>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperl'>With Icon L</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon L
         </VynlButton>
 
         <VynlButton size='large' kind='withicon' loading={true}>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperl'>With Icon L</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon L
         </VynlButton>
 
         <VynlButton size='large' kind='withicon' disabled={true}>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
-          <div className='labelwrapperl'>With Icon L</div>
+          <FontAwesomeIcon icon='heart' />
+          With Icon L
         </VynlButton>
       </VynlContainer>
     </VynlTheming>
@@ -231,66 +225,48 @@ storiesOf('VynlButton', module)
         <div className='headline-04-primary'>Button with Icon and Label</div>
 
         <VynlButton size='small' kind='withicon'>
-          <div className='labelwrappers'>With Icon S</div>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon S
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='small' kind='withicon' loading={true}>
-          <div className='labelwrappers'>With Icon S</div>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon S
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='small' kind='withicon' disabled={true}>
-          <div className='labelwrappers'>With Icon S</div>
-          <div className='iconwrappers'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon S
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon'>
-          <div className='labelwrapperm'>With Icon M</div>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon M
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon' loading={true}>
-          <div className='labelwrapperm'>With Icon M</div>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon M
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='medium' kind='withicon' disabled={true}>
-          <div className='labelwrapperm'>With Icon M</div>
-          <div className='iconwrapperm'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon M
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='withicon'>
-          <div className='labelwrapperl'>With Icon L</div>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon L
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='withicon' loading={true}>
-          <div className='labelwrapperl'>With Icon L</div>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon L
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
 
         <VynlButton size='large' kind='withicon' disabled={true}>
-          <div className='labelwrapperl'>With Icon L</div>
-          <div className='iconwrapperl'>
-            <FontAwesomeIcon icon='heart' />
-          </div>
+          With Icon L
+          <FontAwesomeIcon icon='heart' />
         </VynlButton>
       </VynlContainer>
     </VynlTheming>

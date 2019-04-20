@@ -1,4 +1,4 @@
-.vynl-input{
+.vynl-input {
   width: 100%;
   min-width: 192px;
   max-width: 300px;
@@ -81,4 +81,3 @@ input.withPrefix {
 input.withSuffix {
   padding-right: 0px;
 }
-

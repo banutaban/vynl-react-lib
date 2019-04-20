@@ -55,6 +55,12 @@ export const VynlTextArea = ({
     return classNames.join(' ');
   };
 
+  const getChildrenClone = () => {
+    return React.Children.map(children, child =>
+      React.cloneElement(child, { disabled, hasError }),
+    );
+  };
+
   return (
     <div className={generateClassname(disabled)}>
       <textarea
@@ -66,7 +72,7 @@ export const VynlTextArea = ({
         onBlur={handleBlur}>
         {textValue}
       </textarea>
-      {children && <div className='vynl-textarea-actions'>{children}</div>}
+      {React.Children.count(children) > 0 && <div className='vynl-textarea-actions'>{getChildrenClone()}</div>}
     </div>
   );
 };

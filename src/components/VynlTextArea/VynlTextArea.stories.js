@@ -16,102 +16,98 @@ import { VynlButton } from '../VynlButton/VynlButton';
 library.add(faHeart);
 library.add(faAnchor);
 
-storiesOf('VynlTextArea', module)
-  .add('TextArea Default', () => (
-    <VynlTheming>
-      <VynlContainer>
-        <div className='headline-input'>Input Default</div>
-        <FormField>
-          <VynlLabel>Label</VynlLabel>
-          <VynlHint>Optional</VynlHint>
+storiesOf('VynlTextArea', module).add('TextArea Default', () => (
+  <VynlTheming>
+    <VynlContainer>
+      <div className='headline-input'>Input Default</div>
+      <FormField>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
 
-          <VynlTextArea
-            type='text'
-            placeholder='Write your text'
-            autoFocus=''
-            autoComplete=''
-            name='email'
-          />
-          <VynlError>This is an error message!</VynlError>
-        </FormField>
+        <VynlTextArea
+          type='text'
+          placeholder='Write your text'
+          autoFocus=''
+          autoComplete=''
+          name='email'
+        />
+        <VynlError>This is an error message!</VynlError>
+      </FormField>
 
-        <FormField hasError={true}>
-          <VynlLabel>Label</VynlLabel>
-          <VynlHint>Optional</VynlHint>
+      <FormField hasError={true}>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
 
-          <VynlTextArea
-            type='text'
-            placeholder='Write your text'
-            autoFocus=''
-            autoComplete=''
-            name='email'
-          />
-          <VynlError>This is an error message!</VynlError>
-        </FormField>
+        <VynlTextArea
+          type='text'
+          placeholder='Write your text'
+          autoFocus=''
+          autoComplete=''
+          name='email'
+        />
+        <VynlError>This is an error message!</VynlError>
+      </FormField>
 
-        <FormField hasError={true}>
-          <VynlLabel>Label</VynlLabel>
-          <VynlHint>Optional</VynlHint>
+      <FormField hasError={true}>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
 
-          <VynlTextArea
-            type='text'
-            placeholder='Write your text'
-            autoFocus=''
-            autoComplete=''
-            name='email'
-          >
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='heart' />
-            </VynlButton>
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='anchor' />
-            </VynlButton>
-          </VynlTextArea>
-          <VynlError>This is an error message!</VynlError>
-        </FormField>
+        <VynlTextArea
+          type='text'
+          placeholder='Write your text'
+          autoFocus=''
+          autoComplete=''
+          name='email'>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='heart' />
+          </VynlButton>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='anchor' />
+          </VynlButton>
+        </VynlTextArea>
+        <VynlError>This is an error message!</VynlError>
+      </FormField>
 
-        <FormField>
-          <VynlLabel>Label</VynlLabel>
-          <VynlHint>Optional</VynlHint>
+      <FormField>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
 
-          <VynlTextArea
-            type='text'
-            placeholder='Write your text'
-            autoFocus=''
-            autoComplete=''
-            name='email'
-          >
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='heart' />
-            </VynlButton>
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='anchor' />
-            </VynlButton>
-          </VynlTextArea>
-          <VynlError>This is an error message!</VynlError>
-        </FormField>
+        <VynlTextArea
+          type='text'
+          placeholder='Write your text'
+          autoFocus=''
+          autoComplete=''
+          name='email'>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='heart' />
+          </VynlButton>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='anchor' />
+          </VynlButton>
+        </VynlTextArea>
+        <VynlError>This is an error message!</VynlError>
+      </FormField>
 
-        <FormField>
-          <VynlLabel>Label</VynlLabel>
-          <VynlHint>Optional</VynlHint>
+      <FormField>
+        <VynlLabel>Label</VynlLabel>
+        <VynlHint>Optional</VynlHint>
 
-          <VynlTextArea
-            type='text'
-            placeholder='Write your text'
-            autoFocus=''
-            autoComplete=''
-            disabled={true}
-            name='email'
-          >
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='heart' />
-            </VynlButton>
-            <VynlButton size='medium' kind='onlyicon'>
-              <FontAwesomeIcon icon='anchor' />
-            </VynlButton>
-          </VynlTextArea>
-          <VynlError>This is an error message!</VynlError>
-        </FormField>
-      </VynlContainer>
-    </VynlTheming>
-  ));
+        <VynlTextArea
+          type='text'
+          placeholder='Write your text'
+          autoFocus=''
+          autoComplete=''
+          disabled={true}
+          name='email'>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='heart' />
+          </VynlButton>
+          <VynlButton size='medium' kind='onlyicon'>
+            <FontAwesomeIcon icon='anchor' />
+          </VynlButton>
+        </VynlTextArea>
+        <VynlError>This is an error message!</VynlError>
+      </FormField>
+    </VynlContainer>
+  </VynlTheming>
+));

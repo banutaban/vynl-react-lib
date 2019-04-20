@@ -1,0 +1,22 @@
+/* OUTLINE BUTTON */
+
+.vynl-button.outline {
+    background: transparent;
+    box-shadow: none;
+    color: var(--color-primary-50);
+    border: 2px solid currentColor;
+}
+
+.vynl-button.outline:hover {
+    background: var(--color-primary-50-40);
+}
+
+.vynl-button.outline:active,
+.vynl-button.outline:focus {
+    background: var(--color-primary-50-20);
+}
+
+.vynl-button.outline:disabled:not(.has-error) {
+    color: var(--text-disabled);
+    border: 2px solid var(--color-grey-20);
+}
