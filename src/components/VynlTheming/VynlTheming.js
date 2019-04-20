@@ -1,6 +1,6 @@
 import React, { Component, createRef } from 'react';
 import { applyTheme } from './VynlThemingUtils';
-import { defaultColorPalette, themingConfig } from './VynlThemingData';
+import { defaultColorPalette, defaultTextColorPalette, themingConfig } from './VynlThemingData';
 import './VynlTheming.css';
 
 export class VynlTheming extends Component {
@@ -10,8 +10,8 @@ export class VynlTheming extends Component {
   }
 
   componentDidMount() {
-    const { palette = defaultColorPalette, inverse = false } = this.props;
-    applyTheme(this.themingContainerRef, palette, themingConfig, inverse);
+    const { palette = defaultColorPalette, textPalette= defaultTextColorPalette, inverse = false } = this.props;
+    applyTheme(this.themingContainerRef, palette, textPalette, themingConfig, inverse);
   }
 
   render() {

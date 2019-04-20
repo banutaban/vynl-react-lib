@@ -8,36 +8,11 @@ export const defaultColorPalette = {
   grey: '#262626',
 };
 
-const textPreset = {
-  50: { s: 0, l: 1 },
-  40: { s: 0, l: 1 },
-  30: { s: 0, l: 1 },
-  20: { s: 0.55, l: 0.4 },
-  10: { s: 0.55, l: 0.4 },
-};
-
-const textMonochromePreset = {
-  50: { s: 0, l: 1 },
-  40: { s: 0, l: 1 },
-  30: { s: 0, l: 1 },
-  20: { s: 0, l: 0.15 },
-  10: { s: 0, l: 0.15 },
-};
-
-const textAccessibilityOnePreset = {
-  50: { s: 0, l: 1 },
-  40: { s: 0, l: 1 },
-  30: { s: 0, l: 1 },
-  20: { s: 0.82, l: 0.28 },
-  10: { s: 0.82, l: 0.28 },
-};
-
-const textAccessibilityTwoPreset = {
-  50: { s: 0, l: 1 },
-  40: { s: 0, l: 1 },
-  30: { s: 0, l: 1 },
-  20: { s: 0.76, l: 0.39 },
-  10: { s: 0.76, l: 0.39 },
+export const defaultTextColorPalette = {
+  dark: '#3E3E3E',
+  secondary: '#939090',
+  disabled: '#939090',
+  inverse: '#fff',
 };
 
 const defaultPreset = {
@@ -105,11 +80,11 @@ const monochromeInverse = {
 };
 
 export const themingConfig = {
-  primary: [defaultPreset, defaultInversePreset, textPreset],
-  secondary: [defaultPreset, defaultInversePreset, textPreset],
-  success: [accessibilityOnePreset, accessibilityOneInversePreset, textAccessibilityOnePreset],
-  info: [defaultPreset, defaultInversePreset, textPreset],
-  warning: [accessibilityTwoPreset, accessibilityTwoInversePreset, textAccessibilityOnePreset],
-  danger: [defaultPreset, defaultInversePreset, textPreset],
-  grey: [monochrome, monochromeInverse, textMonochromePreset],
+  primary: [defaultPreset, defaultInversePreset],
+  secondary: [defaultPreset, defaultInversePreset],
+  success: [accessibilityOnePreset, accessibilityOneInversePreset],
+  info: [defaultPreset, defaultInversePreset],
+  warning: [accessibilityTwoPreset, accessibilityTwoInversePreset],
+  danger: [defaultPreset, defaultInversePreset],
+  grey: [monochrome, monochromeInverse],
 };
