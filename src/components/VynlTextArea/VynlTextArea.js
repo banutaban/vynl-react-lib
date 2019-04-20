@@ -10,6 +10,7 @@ export const VynlTextArea = ({
   onChange,
   disabled,
   hasError = false,
+  autoGrow = true,
   ...props
 }) => {
   const [focus, setFocus] = useState(false);
@@ -28,6 +29,10 @@ export const VynlTextArea = ({
   const handleOnChange = e => {
     onChange && onChange(e);
     setTextValue(e.target.value);
+    if (autoGrow) {
+      e.target.style.cssText = 'height:auto;';
+      e.target.style.cssText = 'height:' + e.target.scrollHeight + 'px';
+    }
   };
 
   const generateClassname = disabled => {
@@ -40,6 +45,9 @@ export const VynlTextArea = ({
     }
     if (hasError) {
       classNames.push('error');
+    }
+    if (autoGrow) {
+      classNames.push('auto-grow');
     }
     if (disabled) {
       classNames.push('disabled');
@@ -58,6 +66,7 @@ export const VynlTextArea = ({
         onBlur={handleBlur}>
         {textValue}
       </textarea>
+      {children && children.length && <div className='vynl-textarea-actions'>{children}</div>}
     </div>
   );
 };

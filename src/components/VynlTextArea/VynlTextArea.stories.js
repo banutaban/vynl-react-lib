@@ -21,7 +21,7 @@ storiesOf('VynlTextArea', module)
 
           <VynlTextArea
             type='text'
-            placeholder='email address'
+            placeholder='Write your text'
             autoFocus=''
             autoComplete=''
             name='email'
@@ -34,7 +34,7 @@ storiesOf('VynlTextArea', module)
 
           <VynlTextArea
             type='text'
-            placeholder='email address'
+            placeholder='Write your text'
             autoFocus=''
             autoComplete=''
             name='email'
