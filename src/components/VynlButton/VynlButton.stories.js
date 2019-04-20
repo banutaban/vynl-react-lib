@@ -168,51 +168,62 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Button with Icon and Label</div>
-
-        <VynlButton size='small' kind='withicon'>
-          <FontAwesomeIcon icon='heart' />
-          With Icon S
-        </VynlButton>
-
-        <VynlButton size='small' kind='withicon' loading={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon S
-        </VynlButton>
-
-        <VynlButton size='small' kind='withicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon S
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon'>
-          <FontAwesomeIcon icon='heart' />
-          With Icon M
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon' loading={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon M
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon M
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon'>
-          <FontAwesomeIcon icon='heart' />
-          With Icon L
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon' loading={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon L
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-          With Icon L
-        </VynlButton>
+        <VynlGrid>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon'>
+              <FontAwesomeIcon icon='heart' />
+              With Icon S
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon' loading={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon S
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon S
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon'>
+              <FontAwesomeIcon icon='heart' />
+              With Icon M
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon' loading={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon M
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon M
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon'>
+              <FontAwesomeIcon icon='heart' />
+              With Icon L
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon' loading={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon L
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+              With Icon L
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -223,51 +234,62 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Button with Icon and Label</div>
-
-        <VynlButton size='small' kind='withicon'>
-          With Icon S
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='small' kind='withicon' loading={true}>
-          With Icon S
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='small' kind='withicon' disabled={true}>
-          With Icon S
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon'>
-          With Icon M
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon' loading={true}>
-          With Icon M
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='medium' kind='withicon' disabled={true}>
-          With Icon M
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon'>
-          With Icon L
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon' loading={true}>
-          With Icon L
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='withicon' disabled={true}>
-          With Icon L
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
+        <VynlGrid>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon'>
+              With Icon S
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon' loading={true}>
+              With Icon S
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='small' kind='withicon' disabled={true}>
+              With Icon S
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon'>
+              With Icon M
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon' loading={true}>
+              With Icon M
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='medium' kind='withicon' disabled={true}>
+              With Icon M
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon'>
+              With Icon L
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon' loading={true}>
+              With Icon L
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={4}>
+            <VynlButton size='large' kind='withicon' disabled={true}>
+              With Icon L
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -278,14 +300,18 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>FAB</div>
-
-        <VynlButton size='large' kind='fab'>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='fab' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
+        <VynlGrid>
+          <VynlCell span={1}>
+            <VynlButton size='large' kind='fab'>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='large' kind='fab' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -296,30 +322,38 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Button with Only Icon</div>
-
-        <VynlButton size='small' kind='onlyicon'>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='small' kind='onlyicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='medium' kind='onlyicon'>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='medium' kind='onlyicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='onlyicon'>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
-
-        <VynlButton size='large' kind='onlyicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-        </VynlButton>
+        <VynlGrid>
+          <VynlCell span={1}>
+            <VynlButton size='small' kind='onlyicon'>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='small' kind='onlyicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='medium' kind='onlyicon'>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='medium' kind='onlyicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='large' kind='onlyicon'>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='large' kind='onlyicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ))
@@ -330,16 +364,20 @@ storiesOf('VynlButton', module)
     <VynlTheming>
       <VynlContainer>
         <div className='headline-04-primary'>Button with Only Icon and Label</div>
-
-        <VynlButton size='medium' kind='onlyicon'>
-          <FontAwesomeIcon icon='heart' />
-          <div className='labelwrapper'>Button</div>
-        </VynlButton>
-
-        <VynlButton size='medium' kind='onlyicon' disabled={true}>
-          <FontAwesomeIcon icon='heart' />
-          <div className='labelwrapper'>Button</div>
-        </VynlButton>
+        <VynlGrid>
+          <VynlCell span={1}>
+            <VynlButton size='medium' kind='onlyicon'>
+              <FontAwesomeIcon icon='heart' />
+              <div className='labelwrapper'>Button</div>
+            </VynlButton>
+          </VynlCell>
+          <VynlCell span={1}>
+            <VynlButton size='medium' kind='onlyicon' disabled={true}>
+              <FontAwesomeIcon icon='heart' />
+              <div className='labelwrapper'>Button</div>
+            </VynlButton>
+          </VynlCell>
+        </VynlGrid>
       </VynlContainer>
     </VynlTheming>
   ));
