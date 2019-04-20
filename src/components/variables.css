@@ -1,0 +1,23 @@
+:root {
+  --mobile-screen: 320px;
+  --phablet-screen: 480px;
+  --tablet-screen: 768px;
+  --laptop-screen: 1024px;
+  --desktop-screen: 1280px;
+  --max-container-size: 1240px;
+    /* GRID */
+  --span-1: span 1;
+  --span-2: span 2;
+  --span-3: span 3;
+  --span-4: span 4;
+  --span-5: span 5;
+  --span-6: span 6;
+  --span-7: span 7;
+  --span-8: span 8;
+  --span-9: span 9;
+  --span-10: span 10;
+  --span-11: span 11;
+  --span-12: span 12;
+  --grid-size: repeat(12, 1fr);
+  --gap-size: 16px 16px;
+}
