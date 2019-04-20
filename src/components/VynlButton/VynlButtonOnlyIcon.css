@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+.vynl-button.onlyicon.has-error {
+  color: var(--color-danger-50); 
+}
+
 .vynl-button.onlyicon.large {
   min-width: 40px;
   max-width: 40px;

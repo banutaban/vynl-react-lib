@@ -1,7 +1,7 @@
 .vynl-label {
   color: currentColor;
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--font-size-xxs);
   display: inline-block;
   color: var(--color-primary-50);
 }
