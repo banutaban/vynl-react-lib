@@ -1,0 +1,145 @@
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: calc(var(--desktop-screen) + 1px)) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 2;
+        --span-3: span 3;
+        --span-4: span 4;
+        --span-5: span 5;
+        --span-6: span 6;
+        --span-7: span 7;
+        --span-8: span 8;
+        --span-9: span 9;
+        --span-10: span 10;
+        --span-11: span 11;
+        --span-12: span 12;
+        --grid-size: repeat(12, 1fr);
+        --gap-size: 16px 16px;
+    }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: calc(var(--laptop-screen) + 1px)) and (max-width: var(--desktop-screen)) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 2;
+        --span-3: span 3;
+        --span-4: span 4;
+        --span-5: span 5;
+        --span-6: span 6;
+        --span-7: span 7;
+        --span-8: span 8;
+        --span-9: span 9;
+        --span-10: span 10;
+        --span-11: span 11;
+        --span-12: span 12;
+        --grid-size: repeat(12, 1fr);
+        --gap-size: 8px 8px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: var(--tablet-screen)) and (max-width: var(--laptop-screen)) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 1;
+        --span-3: span 2;
+        --span-4: span 2;
+        --span-5: span 3;
+        --span-6: span 3;
+        --span-7: span 4;
+        --span-8: span 4;
+        --span-9: span 5;
+        --span-10: span 5;
+        --span-11: span 6;
+        --span-12: span 6;
+        --grid-size: repeat(6, 1fr);
+        --gap-size: 8px 8px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: var(--tablet-screen)) and (max-width: var(--laptop-screen)) and (orientation: landscape) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 2;
+        --span-3: span 3;
+        --span-4: span 4;
+        --span-5: span 5;
+        --span-6: span 6;
+        --span-7: span 7;
+        --span-8: span 8;
+        --span-9: span 9;
+        --span-10: span 10;
+        --span-11: span 11;
+        --span-12: span 12;
+        --grid-size: repeat(12, 1fr);
+        --gap-size: 8px 8px;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: calc(var(--phablet-screen) + 1px)) and (max-width: calc(var(--tablet-screen) - 1px)) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 1;
+        --span-3: span 1;
+        --span-4: span 2;
+        --span-5: span 2;
+        --span-6: span 2;
+        --span-7: span 3;
+        --span-8: span 3;
+        --span-9: span 3;
+        --span-10: span 4;
+        --span-11: span 4;
+        --span-12: span 4;
+        --grid-size: repeat(4, 1fr);
+        --gap-size: 8px 8px;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: var(--mobile-screen)) and (max-width: var(--phablet-screen)) {
+    :root {
+        --span-1: span 1;
+        --span-2: span 1;
+        --span-3: span 1;
+        --span-4: span 1;
+        --span-5: span 1;
+        --span-6: span 1;
+        --span-7: span 1;
+        --span-8: span 1;
+        --span-9: span 1;
+        --span-10: span 1;
+        --span-11: span 1;
+        --span-12: span 1;
+        --grid-size: repeat(1, 1fr);
+        --gap-size: 16px 16px;
+    }
+}

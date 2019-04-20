@@ -1,59 +1,58 @@
 .vynl-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: var(--grid-size);
   grid-template-rows: auto;
-  -ms-grid-columns: 1fr 2fr;
   width: 100%;
   position: relative;
   min-height: 0;
   min-width: 0;
-  grid-gap: 16px 16px;
+  grid-gap: var(--gap-size);
 }
 
 .vynl-grid-cell.span-1 {
-  grid-column: span 1;
+  grid-column: var(--span-1);
 }
 
 .vynl-grid-cell.span-2 {
-  grid-column: span 2;
+  grid-column: var(--span-2);
 }
 
 .vynl-grid-cell.span-3 {
-  grid-column: span 3;
+  grid-column: var(--span-3);
 }
 
 .vynl-grid-cell.span-4 {
-  grid-column: span 4;
+  grid-column: var(--span-4);
 }
 
 .vynl-grid-cell.span-5 {
-  grid-column: span 5;
+  grid-column: var(--span-5);
 }
 
 .vynl-grid-cell.span-6 {
-  grid-column: span 6;
+  grid-column: var(--span-6);
 }
 
 .vynl-grid-cell.span-7 {
-  grid-column: span 7;
+  grid-column: var(--span-7);
 }
 
 .vynl-grid-cell.span-8 {
-  grid-column: span 8;
+  grid-column: var(--span-8);
 }
 
 .vynl-grid-cell.span-9 {
-  grid-column: span 9;
+  grid-column: var(--span-9);
 }
 
 .vynl-grid-cell.span-10 {
-  grid-column: span 10;
+  grid-column: var(--span-10);
 }
 
 .vynl-grid-cell.span-11 {
-  grid-column: span 11;
+  grid-column: var(--span-11);
 }
 
 .vynl-grid-cell.span-12 {
-  grid-column: span 12;
+  grid-column: var(--span-12);
 }
