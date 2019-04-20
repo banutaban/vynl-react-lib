@@ -10,7 +10,9 @@ export const VynlInput = ({
   hasError = false,
   ...props
 }) => {
-  const [first, second] = React.Children.toArray(children);
+  const [first, second] = React.Children.toArray(children).map(child =>
+    React.cloneElement(child, { hasError }),
+  );
   const inputClassName = `${first && 'withPrefix'} ${second && 'withSuffix'}`;
 
   const [focus, setFocus] = useState(false);

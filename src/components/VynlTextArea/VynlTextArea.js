@@ -56,9 +56,7 @@ export const VynlTextArea = ({
   };
 
   const getChildrenClone = () => {
-    return React.Children.map(children, child =>
-      React.cloneElement(child, { disabled, hasError }),
-    );
+    return React.Children.map(children, child => React.cloneElement(child, { disabled, hasError }));
   };
 
   return (
@@ -69,10 +67,12 @@ export const VynlTextArea = ({
         placeholder={placeholder}
         onChange={handleOnChange}
         onFocus={handleFocus}
-        onBlur={handleBlur}>
-        {textValue}
-      </textarea>
-      {React.Children.count(children) > 0 && <div className='vynl-textarea-actions'>{getChildrenClone()}</div>}
+        onBlur={handleBlur}
+        value={textValue}
+      />
+      {React.Children.count(children) > 0 && (
+        <div className='vynl-textarea-actions'>{getChildrenClone()}</div>
+      )}
     </div>
   );
 };
