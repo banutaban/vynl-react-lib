@@ -10,7 +10,11 @@ export class VynlTheming extends Component {
   }
 
   componentDidMount() {
-    const { palette = defaultColorPalette, textPalette= defaultTextColorPalette, inverse = false } = this.props;
+    const {
+      palette = defaultColorPalette,
+      textPalette = defaultTextColorPalette,
+      inverse = false,
+    } = this.props;
     applyTheme(this.themingContainerRef, palette, textPalette, themingConfig, inverse);
   }
 

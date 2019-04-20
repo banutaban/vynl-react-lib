@@ -6,41 +6,23 @@ export const applyTheme = (ref, colorPalette, textColorPalette, config, inverse)
     Object.keys(preset).forEach(colorVariation => {
       ref.current.style.setProperty(
         `--color-${colorName}-${colorVariation}`,
-        getColor(color, 1, colorVariation, preset)
+        getColor(color, 1, colorVariation, preset),
       );
       ref.current.style.setProperty(
         `--color-${colorName}-${colorVariation}-20`,
-        getColor(color, 0.2, colorVariation, preset)
+        getColor(color, 0.2, colorVariation, preset),
       );
       ref.current.style.setProperty(
         `--color-${colorName}-${colorVariation}-40`,
-        getColor(color, 0.4, colorVariation, preset)
+        getColor(color, 0.4, colorVariation, preset),
       );
-     
-      console.log(`--color-${colorName}-${colorVariation}: ${getColor(color, 1, colorVariation, preset)};`);
-      console.log(`--color-${colorName}-${colorVariation}-20: ${getColor(color, 0.2, colorVariation, preset)};`);
-      console.log(`--color-${colorName}-${colorVariation}-40: ${getColor(color, 0.4, colorVariation, preset)};`);
-  
     });
   });
 
   Object.entries(textColorPalette).forEach(([colorName, color]) => {
-   
-      ref.current.style.setProperty(
-        `--text-${colorName}`,
-        color 
-      );
-      
-      ref.current.style.setProperty(
-        `--text-${colorName}-50`,
-        getColorwithOpacity (color, 0.5)
-      ); 
-
-      console.log(`--text-${colorName}: ${color};`);
-      console.log(`--text-${colorName}-50: ${    getColorwithOpacity (color, 0.5)};`);
-      
+    ref.current.style.setProperty(`--text-${colorName}`, color);
+    ref.current.style.setProperty(`--text-${colorName}-50`, getColorwithOpacity(color, 0.5));
   });
-
 };
 
 export const getColor = (hex, alpha, colorVariation, preset) => {
