@@ -1,5 +1,5 @@
 .vynl-error {
-    font-size: 12px;
+    font-size: var(--font-size-xxs);
     font-weight: normal;
     color: var(--color-danger-50);
 }
