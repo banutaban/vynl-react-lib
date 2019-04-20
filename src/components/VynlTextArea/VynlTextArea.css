@@ -4,49 +4,49 @@
     max-width: 300px;
     height: auto;
     border-radius: 6px;
-    border: 1px solid var(--text-color-primary-10);
-    background: #fff;
+    border: 1px solid var(--color-primary-20);
+    background: var(--color-grey-10);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    color: var(--text-color-primary-10);
+    color: var(--color-primary-50);
 }
 
 .vynl-textarea.focus {
-    border: 1px solid var(--text-color-primary-10);
+    border: 1px solid var(--color-primary-40);
 }
 
 .vynl-textarea.filled {
     background: var(--color-primary-20);
-    color: var(--text-color-primary-20);
+    color: var(--color-primary-50);
 }
 
 .vynl-textarea.error {
     background: var(--color-danger-20);
-    color: var(--text-color-danger-20);
-    border: 1px solid var(--text-color-danger-20);
+    color: var(--color-danger-50);
+    border: 1px solid var(--color-danger-50);
 }
 
 .vynl-textarea.error textarea::placeholder {
-    color: var(--text-color-danger-20-40);
+    color: var(--color-danger-50-40);
 }
 
 .vynl-textarea.disabled {
     background: var(--color-grey-20);
-    color: var(--text-color-grey-20-40);
-    border: 1px solid var(--text-color-grey-20-40);
+    color: var(--text-disabled);
+    border: 1px solid var(--color-grey-20);
 }
 
 .vynl-textarea.disabled textarea::placeholder {
-    color: var(--text-color-grey-20-40);
+    color: var(--text-disabled);
 }
 
 .vynl-textarea textarea::placeholder {
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: var(--text-color-primary-10-40);
+    color: var(--color-primary-50-40);
 }
 
 .vynl-textarea textarea {

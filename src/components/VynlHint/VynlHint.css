@@ -1,6 +1,6 @@
 .vynl-hint {
     font-size: 10px;
     font-weight: bold;
-    color: var(--color-grey-40);
+    color: var(--text-secondary);
     display: inline-block;
 }

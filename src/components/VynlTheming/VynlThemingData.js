@@ -68,7 +68,7 @@ const monochrome = {
   40: { s: 0, l: 0.25 },
   30: { s: 0, l: 0.35 },
   20: { s: 0, l: 0.8 },
-  10: { s: 0, l: 0.95 },
+  10: { s: 0, l: 1 },
 };
 
 const monochromeInverse = {
