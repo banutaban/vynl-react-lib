@@ -8,7 +8,10 @@ import { VynlHint } from '../VynlHint/VynlHint';
 import { VynlError } from '../VynlError/VynlError';
 import { VynlLabel } from '../VynlLabel/VynlLabel';
 import { VynlContainer } from '../VynlContainer/VynlContainer';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+library.add(faHeart);
 
 storiesOf('VynlInput', module)
   .add('Input Default', () => (
@@ -94,38 +97,3 @@ storiesOf('VynlInput', module)
       </VynlContainer>
     </VynlTheming>
   ));
-
-/*.add('Text Area', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Text Area Default</div>
-
-      <FormField>
-        <VynlTextArea type='text' placeholder='Type something' autoFocus='' />
-      </FormField>
-    </div>
-  ))
-
-  .add('Text Area with icon', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Text Area with Icon</div>
-
-      <FormField>
-        <VynlTextArea type='text' placeholder='Type something' autoFocus='' />
-      </FormField>
-    </div>
-  ))
-
-  .add('Text Area Disabled', () => (
-    <div className='page-section'>
-      <div className='headline-input'>Text Area Disabled</div>
-
-      <FormField>
-        <VynlTextArea
-          type='text'
-          placeholder='Type something'
-          autoFocus={false}
-          disabled={true}
-        />
-      </FormField>
-    </div>
-  )); */

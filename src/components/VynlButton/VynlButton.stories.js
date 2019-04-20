@@ -4,17 +4,10 @@ import { storiesOf } from '@storybook/react';
 import { VynlButton } from './VynlButton';
 import { VynlTheming } from '../VynlTheming/VynlTheming';
 import { VynlContainer } from '../VynlContainer/VynlContainer';
+import { VynlCell, VynlGrid } from '../VynlGrid/VynlGrid';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { VynlCell, VynlGrid } from '../VynlGrid/VynlGrid';
-
-/* ICONS */
-
-/* Too add new icons from the Fontawesome solid free package, copy the name of the selected icon from the FA website and place the name 
-with a coma afte the faHeart on the 11th line. Don't forget to place each added icon under the 16th line, 
-as the same format at the 16th line. */
-
 library.add(faHeart);
 
 storiesOf('VynlButton', module)

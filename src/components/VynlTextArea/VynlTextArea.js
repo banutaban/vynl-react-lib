@@ -66,7 +66,7 @@ export const VynlTextArea = ({
         onBlur={handleBlur}>
         {textValue}
       </textarea>
-      {children && children.length && <div className='vynl-textarea-actions'>{children}</div>}
+      {children && <div className='vynl-textarea-actions'>{children}</div>}
     </div>
   );
 };
