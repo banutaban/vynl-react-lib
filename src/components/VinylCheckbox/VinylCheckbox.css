@@ -1,0 +1,30 @@
+.vinyl-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid var(--color-primary-50);
+  background: var(--color-primary-20);
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.vinyl-checkbox.active {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-primary-50);
+  border-radius: 3px;
+  background: var(--color-primary-50);
+}
+
+.vinyl-checkbox.disabled {
+  background: var(--color-primary-20);
+}
+
+
+.inner-icon {
+  color: var(--color-primary-20);
+}

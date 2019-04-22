@@ -6,20 +6,20 @@ export const FormField = ({ children, hasError = false }) => {
 
   React.Children.forEach(children, child => {
     switch (child.type.name) {
-      case 'VynlTextArea':
-      case 'VynlInput':
+      case 'VinylTextArea':
+      case 'VinylInput':
         input = React.cloneElement(child, {hasError});
         break;
-      case 'VynlLabel':
+      case 'VinylLabel':
         label = React.cloneElement(child, {type: hasError ? 'danger': ''});
         break;
-      case 'VynlHint':
+      case 'VinylHint':
         hint = React.cloneElement(child);
         break;
-      case 'VynlError':
+      case 'VinylError':
         error = React.cloneElement(child);
         break;
-      case 'VynlLink':
+      case 'VinylLink':
         link = React.cloneElement(child);
         break;
     }

@@ -1,0 +1,55 @@
+/* BUTTON WITH ONLY ICON */
+
+.vinyl-button.onlyicon {
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  box-shadow: none;
+  background: transparent;
+  color: var(--color-primary-50);
+  padding: 0;
+}
+
+.vinyl-button.onlyicon.has-error {
+  color: var(--color-danger-50); 
+}
+
+.vinyl-button.onlyicon.large {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.vinyl-button.onlyicon.small {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.vinyl-button.onlyicon:hover {
+  background: var(--color-primary-50-40);
+}
+
+.vinyl-button.onlyicon:active {
+  background: var(--color-primary-50-20);
+}
+
+.vinyl-button.onlyicon:disabled:not(.has-error) {
+  background: var(--color-grey-20);
+  color: var(--text-disabled);
+}
+
+.vinyl-button.onlyicon .ripple-effect-container {
+  border-radius: 100%;
+}
+
+/* ONLY ICON + LABEL*/
+
+.vinyl-button.vinyl-button.onlyicon .labelwrapper {
+  position: absolute;
+  top: 100%;
+  font-size: 10px;
+}

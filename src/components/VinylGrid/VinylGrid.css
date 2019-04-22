@@ -1,0 +1,58 @@
+.vinyl-grid {
+  display: grid;
+  grid-template-columns: var(--grid-size);
+  grid-template-rows: auto;
+  width: 100%;
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  grid-gap: var(--gap-size);
+}
+
+.vinyl-grid-cell.span-1 {
+  grid-column: var(--span-1);
+}
+
+.vinyl-grid-cell.span-2 {
+  grid-column: var(--span-2);
+}
+
+.vinyl-grid-cell.span-3 {
+  grid-column: var(--span-3);
+}
+
+.vinyl-grid-cell.span-4 {
+  grid-column: var(--span-4);
+}
+
+.vinyl-grid-cell.span-5 {
+  grid-column: var(--span-5);
+}
+
+.vinyl-grid-cell.span-6 {
+  grid-column: var(--span-6);
+}
+
+.vinyl-grid-cell.span-7 {
+  grid-column: var(--span-7);
+}
+
+.vinyl-grid-cell.span-8 {
+  grid-column: var(--span-8);
+}
+
+.vinyl-grid-cell.span-9 {
+  grid-column: var(--span-9);
+}
+
+.vinyl-grid-cell.span-10 {
+  grid-column: var(--span-10);
+}
+
+.vinyl-grid-cell.span-11 {
+  grid-column: var(--span-11);
+}
+
+.vinyl-grid-cell.span-12 {
+  grid-column: var(--span-12);
+}

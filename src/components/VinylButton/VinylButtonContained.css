@@ -1,0 +1,55 @@
+/* CONTAINED BUTTON */
+
+.vinyl-button {
+    min-width: 192px;
+    height: 48px;
+    border-radius: 3px;
+    background: var(--color-primary-50);
+    box-shadow: var(--shadow-level-1);
+    color: var(--text-inverse);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    transition: background-color ease-in-out 0.120s;
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vinyl-button.has-error {
+    color: var(--color-danger-50);
+    background-color: var(--color-danger-20);
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.vinyl-button:hover {
+    background: var(--color-primary-40);
+    box-shadow: var(--shadow-level-2);
+
+}
+
+.vinyl-button:active,
+.vinyl-button:focus {
+    background: var(--color-primary-30);
+}
+
+.vinyl-button.large {
+    height: 56px;
+    font-size: var(--font-size-s);
+}
+
+.vinyl-button.small {
+    height: 40px;
+}
+
+.vinyl-button:disabled:not(.has-error) {
+    background: var(--color-grey-20);
+    box-shadow: none;
+    color: var(--text-disabled);
+    pointer-events: none;
+}

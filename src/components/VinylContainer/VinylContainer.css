@@ -1,0 +1,5 @@
+.vinyl-container {
+    padding: 16px;
+    max-width: var(--max-container-size);
+    margin: 0 auto;
+}

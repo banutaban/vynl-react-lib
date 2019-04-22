@@ -1,0 +1,6 @@
+.vinyl-hint {
+    font-size: var(--font-size-xxxs);
+    font-weight: normal;
+    color: var(--text-secondary);
+    display: inline-block;
+}

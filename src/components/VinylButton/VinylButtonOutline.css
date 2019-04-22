@@ -1,0 +1,22 @@
+/* OUTLINE BUTTON */
+
+.vinyl-button.outline {
+    background: transparent;
+    box-shadow: none;
+    color: var(--color-primary-50);
+    border: 2px solid currentColor;
+}
+
+.vinyl-button.outline:hover {
+    background: var(--color-primary-50-40);
+}
+
+.vinyl-button.outline:active,
+.vinyl-button.outline:focus {
+    background: var(--color-primary-50-20);
+}
+
+.vinyl-button.outline:disabled:not(.has-error) {
+    color: var(--text-disabled);
+    border: 2px solid var(--color-grey-20);
+}

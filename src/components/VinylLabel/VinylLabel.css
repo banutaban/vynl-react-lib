@@ -1,0 +1,19 @@
+.vinyl-label {
+  color: currentColor;
+  font-weight: bold;
+  font-size: var(--font-size-xxs);
+  display: inline-block;
+  color: var(--color-primary-50);
+}
+
+.vinyl-label.success {
+  color: var(--color-success-50);
+}
+
+.vinyl-label.danger {
+  color: var(--color-danger-50);
+}
+
+.vinyl-label.disabled {
+  color: var(--color-grey-20);
+}
