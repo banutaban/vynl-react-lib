@@ -1,5 +1,5 @@
 .vinyl-error {
-    font-size: var(--font-size-xxs);
+    font-size: var(--font-size-xs);
     font-weight: normal;
     color: var(--color-danger-50);
 }

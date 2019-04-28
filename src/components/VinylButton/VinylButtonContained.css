@@ -7,7 +7,7 @@
     background: var(--color-primary-50);
     box-shadow: var(--shadow-level-1);
     color: var(--text-inverse);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s);
     font-weight: bold;
     border: 0;
     outline: 0;
@@ -40,7 +40,7 @@
 
 .vinyl-button.large {
     height: 56px;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
 }
 
 .vinyl-button.small {

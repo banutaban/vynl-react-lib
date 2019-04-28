@@ -44,7 +44,7 @@
 }
 
 .vinyl-input input::placeholder {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-s);
   font-weight: normal;
   line-height: 24px;
   color: var(--color-primary-50-40);
@@ -55,7 +55,7 @@
   height: 100%;
   background: transparent;
   color: currentColor;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-s);
   font-weight: normal;
   border: 0;
   outline: 0;

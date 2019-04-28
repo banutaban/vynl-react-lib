@@ -132,22 +132,20 @@
 
 .vinyl-theming {
 
-  --font-size-xxxs: 10px;
-  --font-size-xxs: 12px;
-  --font-size-xs: 16px;
-  --font-size-s: 24px;
-  --font-size-m: 36px;
-  --font-size-l: 45px;
-  --font-size-xl: 64px;
-  --font-size-xxl: 70px;
-  --font-size-xxxl: 87px;
+  --font-size-xs: 12px;
+  --font-size-s: 16px;
+  --font-size-m: 24px;
+  --font-size-l: 32px;
+  --font-size-xl: 40px;
+  --font-size-xxl: 52px;
+  --font-size-xxxl: 64px;
 }
 
 .vinyl-theming h1,
 .vinyl-theming .headline-01 {
   font-size: var(--font-size-xxxl);
-  font-weight: normal;
-  line-height: 100px;
+  font-weight: bold;
+  line-height: 80px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -156,8 +154,8 @@
 .vinyl-theming h2,
 .vinyl-theming .headline-02 {
   font-size: var(--font-size-xxl);
-  font-weight: normal;
-  line-height: 80px;
+  font-weight: bold;
+  line-height: 64px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -166,8 +164,8 @@
 .vinyl-theming h3,
 .vinyl-theming .headline-03 {
   font-size: var(--font-size-xl);
-  font-weight: normal;
-  line-height: 64px;
+  font-weight: bold;
+  line-height: 50px;
   color: currentColor;
 }
 
@@ -175,7 +173,7 @@
 .vinyl-theming .headline-04 {
   font-size: var(--font-size-l);
   font-weight: bold;
-  line-height: 52px;
+  line-height: 40px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -185,7 +183,7 @@
 .vinyl-theming .headline-05 {
   font-size: var(--font-size-m);
   font-weight: bold;
-  line-height: 54px;
+  line-height: 36px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -195,7 +193,7 @@
 .vinyl-theming .headline-06 {
   font-size: var(--font-size-s);
   font-weight: bold;
-  line-height: 36px;
+  line-height: 24px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -204,7 +202,7 @@
 
 .vinyl-theming p,
 .vinyl-theming .paragraph {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-s);
   font-weight: normal;
   line-height: 24px;
   color: currentColor;
@@ -215,7 +213,7 @@
 
 .vinyl-theming a,
 .vinyl-theming .link {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-s);
   font-weight: bold;
   line-height: 24px;
   color: currentColor;
@@ -225,7 +223,7 @@
 
 
 .vinyl-theming .body-2 {
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-xs);
   font-weight: normal;
   line-height: 16px;
   color: currentColor;
@@ -233,7 +231,7 @@
 
 
 .vinyl-theming .link-2 {
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-xs);
   font-weight: bold;
   line-height: 16px;
   color: currentColor;
@@ -244,7 +242,7 @@
 
 .vinyl-theming caption,
 .vinyl-theming .caption {
-  font-size: var(--font-size-xxxs);
+  font-size: var(--font-size-xs);
   font-weight: bold;
   line-height: 16px;
   color: currentColor;
@@ -253,13 +251,5 @@
 }
 
 
-.vinyl-theming title,
-.vinyl-theming .title {
-  font-size: var(--font-size-xs);
-  font-weight: bold;
-  line-height: 24px;
-  color: currentColor;
-  margin: 0;
-  padding: 0;
-}
+
 

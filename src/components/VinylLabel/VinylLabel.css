@@ -1,7 +1,7 @@
 .vinyl-label {
   color: currentColor;
   font-weight: bold;
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-xs);
   display: inline-block;
   color: var(--color-primary-50);
 }
