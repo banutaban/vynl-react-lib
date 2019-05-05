@@ -134,18 +134,18 @@
 
   --font-size-xs: 12px;
   --font-size-s: 16px;
-  --font-size-m: 24px;
-  --font-size-l: 32px;
-  --font-size-xl: 40px;
-  --font-size-xxl: 52px;
-  --font-size-xxxl: 64px;
+  --font-size-m: 22px;
+  --font-size-l: 28px;
+  --font-size-xl: 38px;
+  --font-size-xxl: 50px;
+  --font-size-xxxl: 68px;
 }
 
 .vinyl-theming h1,
 .vinyl-theming .headline-01 {
   font-size: var(--font-size-xxxl);
   font-weight: bold;
-  line-height: 80px;
+  line-height: 84px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -155,7 +155,7 @@
 .vinyl-theming .headline-02 {
   font-size: var(--font-size-xxl);
   font-weight: bold;
-  line-height: 64px;
+  line-height: 62px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -165,7 +165,7 @@
 .vinyl-theming .headline-03 {
   font-size: var(--font-size-xl);
   font-weight: bold;
-  line-height: 50px;
+  line-height: 48px;
   color: currentColor;
 }
 
@@ -173,7 +173,7 @@
 .vinyl-theming .headline-04 {
   font-size: var(--font-size-l);
   font-weight: bold;
-  line-height: 40px;
+  line-height: 36px;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -183,7 +183,7 @@
 .vinyl-theming .headline-05 {
   font-size: var(--font-size-m);
   font-weight: bold;
-  line-height: 36px;
+  line-height: 32px;
   color: currentColor;
   margin: 0;
   padding: 0;
