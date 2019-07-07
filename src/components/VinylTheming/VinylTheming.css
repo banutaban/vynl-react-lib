@@ -126,26 +126,27 @@
   height: 100%;
 }
 
-/* Dark Theme will be placed here! */
-
 /* Text Styles */
+
+/* Type scale ratio: 1.33 */
 
 .vinyl-theming {
 
-  --font-size-xs: 12px;
-  --font-size-s: 16px;
-  --font-size-m: 22px;
-  --font-size-l: 28px;
-  --font-size-xl: 38px;
-  --font-size-xxl: 50px;
-  --font-size-xxxl: 68px;
+  --font-size-xxs: 0.75em;
+  --font-size-xs: 0.87em;
+  --font-size-s: 1em;
+  --font-size-m: 1.33em;
+  --font-size-l: 1.777em;
+  --font-size-xl: 2.369em;
+  --font-size-xxl: 3.157em;
+  --font-size-xxxl: 4.209em;
 }
 
 .vinyl-theming h1,
 .vinyl-theming .headline-01 {
   font-size: var(--font-size-xxxl);
   font-weight: bold;
-  line-height: 84px;
+  line-height: 5.25em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -155,7 +156,7 @@
 .vinyl-theming .headline-02 {
   font-size: var(--font-size-xxl);
   font-weight: bold;
-  line-height: 62px;
+  line-height: 3.875em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -165,7 +166,7 @@
 .vinyl-theming .headline-03 {
   font-size: var(--font-size-xl);
   font-weight: bold;
-  line-height: 48px;
+  line-height: 3em;
   color: currentColor;
 }
 
@@ -173,7 +174,7 @@
 .vinyl-theming .headline-04 {
   font-size: var(--font-size-l);
   font-weight: bold;
-  line-height: 36px;
+  line-height: 2.25em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -183,7 +184,7 @@
 .vinyl-theming .headline-05 {
   font-size: var(--font-size-m);
   font-weight: bold;
-  line-height: 32px;
+  line-height: 2em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -193,7 +194,7 @@
 .vinyl-theming .headline-06 {
   font-size: var(--font-size-s);
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.5em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -204,7 +205,7 @@
 .vinyl-theming .paragraph {
   font-size: var(--font-size-s);
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.5em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -215,7 +216,7 @@
 .vinyl-theming .link {
   font-size: var(--font-size-s);
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.5em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -225,7 +226,7 @@
 .vinyl-theming .body-2 {
   font-size: var(--font-size-xs);
   font-weight: normal;
-  line-height: 16px;
+  line-height: 1.25em;
   color: currentColor;
 }
 
@@ -233,7 +234,7 @@
 .vinyl-theming .link-2 {
   font-size: var(--font-size-xs);
   font-weight: bold;
-  line-height: 16px;
+  line-height: 1.25em;
   color: currentColor;
   margin: 0;
   padding: 0;
@@ -242,9 +243,9 @@
 
 .vinyl-theming caption,
 .vinyl-theming .caption {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   font-weight: bold;
-  line-height: 16px;
+  line-height: 1em;
   color: currentColor;
   margin: 0;
   padding: 0;

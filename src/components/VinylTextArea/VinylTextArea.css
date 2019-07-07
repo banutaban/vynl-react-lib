@@ -52,9 +52,9 @@
 }
 
 .vinyl-textarea textarea::placeholder {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.25em;
   color: var(--color-primary-50-40);
 }
 
@@ -64,7 +64,7 @@
   width: 100%;
   background: transparent;
   color: currentColor;
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-weight: normal;
   border: 0;
   outline: 0;
